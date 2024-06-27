@@ -19,7 +19,7 @@ const App = () => {
       <Route path='/myServices/edit/:id' element={<EditService />} />
       <Route path='/serviceInquiry' element={<Quote />} />
       <Route path='/about' element={<About />} />
-      <Route path='/servicePage' element={<ServicePage />} />
+      <Route path='/gallery' element={<ServicePage />} />
     </Routes>  
   )
 }

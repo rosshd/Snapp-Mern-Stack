@@ -5,9 +5,9 @@ import mainLogo from '../assets/mainLogo.png'
 
 const heading = () => {
     return (
-    <div className= 'flex flex-col items-center justify-center'>
+    <div className= 'flex flex-col justify-center'>
 
-        <div className='flex justify-center items-center flex-col 
+        <div className='flex justify-center items-center flex-col h-[90vh]
         border-b-2 border-b-orange-300 bg-zinc-900 w-screen p-10 lg:p-16 lg:flex-row py-20'>
 
             <div className=' justify-center items-center flex flex-col lg:mr-12 max-lg:content-between max-lg:my-4 m-8'>
