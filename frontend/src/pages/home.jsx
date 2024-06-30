@@ -24,7 +24,7 @@ const Home = () => {
         })
   }, [])
   return (
-    <div>
+    <div className='bg-slate-950 h-full w-screen'>
         <NavBar />
         <Heading />
         <Projects />

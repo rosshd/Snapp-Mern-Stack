@@ -13,16 +13,16 @@ const heading = () => {
             <div className=' justify-center items-center flex flex-col lg:mr-12 max-lg:content-between max-lg:my-4 m-8'>
 
                 <img src={mainLogo} className='w-4/5 self-center max-lg:max-h-32'></img>
-                <p1 className='overflow-hidden text-end text-lg self-end opacity-55 w-4/5 mb-8 max-sm:pr-10 pr-16 font-semibold text-white 
-                        animate-text-reveal'>"Turning Ideas Into Reality"</p1>
+                <h1 className='overflow-hidden text-end text-lg self-end opacity-55 w-4/5 mb-8 max-sm:pr-10 pr-16 font-semibold text-white 
+                        animate-text-reveal'>"Turning Ideas Into Reality"</h1>
 
                 <div className='flex flex-row items-center my-2 justify-center'>
                     <Button href='/about' className=' mx-2'>
-                        <h1>Our Mission</h1>
+                        <h1>About Our 3D Printing</h1>
                     </Button>
                     <Button href='/serviceInquiry' className=' mx-2'>
                         <span>Get a Quote</span>
-                        <img class=" mx-2 w-4 transition duration-300 ease-in-out h-4 border-y-8 border-y-transparent border-l-[16px] 
+                        <img className=" mx-2 w-4 transition duration-300 ease-in-out h-4 border-y-8 border-y-transparent border-l-[16px] 
                             border-l-orange-300 "></img>
                     </Button>
                 </div>  
@@ -32,7 +32,7 @@ const heading = () => {
 
             <img 
                 src={snappSaber}
-                className='lg:w-2/5 mt-8 max-lg:max-w-72 rounded-xl self-center lg:m-12 max-lg:h-auto shadow-md shadow-zinc-600'
+                className='lg:w-2/5 mt-8 max-lg:max-w-72 rounded-xl self-center lg:m-12 max-lg:h-auto shadow-md shadow-zinc-600 z-10'
             />
 
         </div>
