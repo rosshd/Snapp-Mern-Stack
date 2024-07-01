@@ -8,11 +8,11 @@ import keychain from '../assets/keychain1.png'
 
 const projectLanding = () => {
   return (
-    <div className='h-dvh sm:flex sm:flex-col w-screen bg-neutral-950 bg-gradient-to-br p-4 border-b-2 border-b-orange-300 justify-center items-center overflow-hidden'>
+    <div className='h-dvh sm:flex sm:flex-col man-w-screen bg-zinc-950 bg-gradient-to-br p-4 border-b-2 border-b-orange-300 justify-center items-center overflow-hidden'>
       <div>
-        <h1 className='text-white text-center text-7xl lg:text-8xl max-md:py-4 font-serif shadow-sm'>Some Of Our Work</h1>
+        <h1 className='text-white text-center text-7xl lg:text-7xl max-md:py-4 font-serif shadow-sm'>Some Of Our Work</h1>
       </div>
-      <ImageCycle className="flex-row overflow-hidden w-[100%] h-[60%] max-md:h-[50%] items-center hover:animate-out">  
+      <ImageCycle className="flex-row overflow-hidden w-[100%] h-[60%] max-md:h-[50%] items-center">  
         <img src={board1} className="w-[18dvw] max-md:w-[30dvw] border-2 left-[-22%] drop-shadow-lg overflow-hidden shadow-orange-100 border-orange-300 rounded-md animate-infinite-scroll absolute delay-0"/>
         <img src={iron1} className="w-[18dvw] max-md:w-[30dvw] border-2 left-[-22%] shadow-md overflow-hidden border-orange-300 rounded-md animate-infinite-scroll absolute delay-2000"/>
         <img src={board2} className="w-[18dvw] max-md:w-[30dvw] border-2 left-[-22%] shadow-md overflow-hidden border-orange-300 rounded-md animate-infinite-scroll absolute delay-4000"/>

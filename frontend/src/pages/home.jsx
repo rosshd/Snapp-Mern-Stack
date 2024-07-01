@@ -30,7 +30,7 @@ const Home = () => {
         <Projects />
 
 
-        <div className='flex-row items-center w-dvw h-dvh bg-gray-400 min-h-dvh'>
+        <div className='flex-row items-center w-dvw h-dvh bg-zinc-950 min-h-dvh'>
             <h1>hey</h1>
         </div>
         
