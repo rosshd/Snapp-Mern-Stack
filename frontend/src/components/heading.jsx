@@ -5,10 +5,10 @@ import mainLogo from '../assets/mainLogo.png'
 
 const heading = () => {
     return (
-    <div className= 'flex flex-col justify-center'>
+    <div className= 'flex flex-col justify-center items-center bg-zinc-900 h-[90vh]'>
 
-        <div className='flex justify-center items-center flex-col h-[90vh]
-        border-b-2 border-b-orange-300 bg-zinc-900 w-screen p-10 lg:p-16 lg:flex-row py-20'>
+        <div className='flex justify-center items-center flex-col
+          w-screen p-10 lg:p-16 lg:flex-row py-20 mt-12'>
 
             <div className=' justify-center items-center flex flex-col lg:mr-12 max-lg:content-between max-lg:my-4 m-8'>
 
@@ -36,6 +36,7 @@ const heading = () => {
             />
 
         </div>
+        <div className='justify-self-end w-72 h-1 rounded-lg bg-orange-300 align-middle'></div>
     </div>
   )
 }
