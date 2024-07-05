@@ -24,12 +24,12 @@ const Home = () => {
         })
   }, [])
   return (
-    <div className='bg-zinc-900 h-fit flex flex-col max-w-[100dvw] overflow-x-hidden justify-center items-center'>
+    <div className='bg-zinc-900 h-fit flex flex-col max-w-[100dvw] overflow-auto justify-center items-center'>
         <NavBar />
 
         <Heading />
           <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
-        <Projects />
+        <Projects className='overflow-x-hidden'/>
           <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
 
 

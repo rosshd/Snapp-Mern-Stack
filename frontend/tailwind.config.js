@@ -29,7 +29,7 @@ export default {
         },
         "infinite-scroll": {
           "0%": {
-            transform: "translate(780%,0)",
+            transform: "translate(700%,0)",
           },
           "100%": {
             transform: "translate(0,0)",

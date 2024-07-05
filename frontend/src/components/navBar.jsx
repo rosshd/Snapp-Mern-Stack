@@ -9,7 +9,7 @@ const navBar = ( {className} ) => {
     <div className={classes}>
       <Link className='fixed top-0 right-0 p-4' to='/'>
         <button>
-          <img src={logoIcon} className='h-20 transition-all bg-opacity-80 duration-200 rounded-full hover:bg-opacity-100 hover:translate-y-[-2%] hover:scale-105 ' />
+          <img src={logoIcon} className='h-16 transition-all bg-opacity-80 duration-200 rounded-full hover:bg-opacity-100 hover:translate-y-[-2%] hover:scale-105 ' />
         </button>
       </Link>
       <div className='flex-row-reverse items-center m-4 h-14 fixed top-0 right-20 md:block hidden'>

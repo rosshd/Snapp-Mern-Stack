@@ -5,8 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="./src/assets/theSnapp.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SnappLabs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .no-scrollbar {
+        overflow-x: hidden;
+      }
+    </style>
   </head>
-  <body>
+  <body class="no-scrollbar">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
