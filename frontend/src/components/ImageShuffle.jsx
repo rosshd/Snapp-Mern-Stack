@@ -5,7 +5,7 @@ import { Link, Route } from 'react-router-dom'
 
 const ImageScroller = ( {className, children, onClick} ) => {
 
-    const classes = `flex flex-row h-64
+    const classes = `items-center justify-center
     ${className || ""}
     `;
 
@@ -13,7 +13,7 @@ const ImageScroller = ( {className, children, onClick} ) => {
 
     const ImageShuffle = () => (
         <button className={classes}>
-            <span className='flex-row flex items-center'>{children}</span>
+            <span className='flex-row flex'>{children}</span>
         </button>
     )
 

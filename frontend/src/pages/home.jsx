@@ -24,10 +24,13 @@ const Home = () => {
         })
   }, [])
   return (
-    <div className='bg-slate-950 h-full w-screen'>
+    <div className='bg-zinc-900 h-fit flex flex-col max-w-[100dvw] overflow-x-hidden justify-center items-center'>
         <NavBar />
+
         <Heading />
+          <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
         <Projects />
+          <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
 
 
         <div className='flex-row items-center w-dvw h-dvh bg-zinc-900 min-h-dvh'>

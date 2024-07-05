@@ -5,24 +5,24 @@ import mainLogo from '../assets/mainLogo.png'
 
 const heading = () => {
     return (
-    <div className= 'flex flex-col justify-center items-center bg-zinc-900 h-[90vh]'>
+    <div className= 'flex flex-col justify-center items-center bg-zinc-900 h-[90vh] overflow-hidden'>
 
         <div className='flex justify-center items-center flex-col
-          w-screen p-10 lg:p-16 lg:flex-row py-20 mt-12'>
+          w-screen p-4 lg:p-16 lg:flex-row py-20 mt-12'>
 
-            <div className=' justify-center items-center flex flex-col lg:mr-12 max-lg:content-between max-lg:my-4 m-8'>
+            <div className=' justify-center items-center flex flex-col lg:mr-12 max-lg:content-between max-lg:my-4 m-4'>
 
                 <img src={mainLogo} className='w-4/5 self-center max-lg:max-h-32'></img>
                 <h1 className='overflow-hidden text-end text-lg self-end opacity-55 w-4/5 mb-8 max-sm:pr-10 pr-16 font-semibold text-white 
                         animate-text-reveal'>"Turning Ideas Into Reality"</h1>
 
                 <div className='flex flex-row items-center my-2 justify-center'>
-                    <Button href='/about' className=' mx-2'>
+                    <Button href='/about' className='mr-2'>
                         <h1>About Our 3D Printing</h1>
                     </Button>
-                    <Button href='/serviceInquiry' className=' mx-2'>
+                    <Button href='/serviceInquiry' className='ml-2'>
                         <span>Get a Quote</span>
-                        <img className=" mx-2 w-4 transition duration-300 ease-in-out h-4 border-y-8 border-y-transparent border-l-[16px] 
+                        <img className=" ml-2 w-4 transition duration-300 ease-in-out h-4 border-y-8 border-y-transparent border-l-[16px] 
                             border-l-orange-300 "></img>
                     </Button>
                 </div>  
@@ -36,7 +36,6 @@ const heading = () => {
             />
 
         </div>
-        <div className='justify-self-end w-72 h-1 rounded-lg bg-orange-300 align-middle'></div>
     </div>
   )
 }
