@@ -3,6 +3,7 @@ import axios from 'axios'
 import Heading from '../components/heading'
 import NavBar from '../components/navBar'
 import Projects from '../components/projectLanding'
+import Uses from '../components/uses'
 
 const Home = () => {
 
@@ -28,10 +29,11 @@ const Home = () => {
         <NavBar />
 
         <Heading />
-          <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
-        <Projects className='overflow-x-hidden'/>
-          <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
-
+        <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
+        <Projects/>
+        <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
+        <Uses/>
+        <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
 
         <div className='flex-row items-center w-dvw h-dvh bg-zinc-900 min-h-dvh'>
             <h1>hey</h1>

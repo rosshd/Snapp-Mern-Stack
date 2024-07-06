@@ -1,14 +1,14 @@
 import React from 'react'
 import Button from './theButton'
 import ImageCycle from './ImageShuffle'
-import board1 from '../assets/cuttingBoards.png'
-import board2 from '../assets/board2.png'
-import iron1 from '../assets/ironSuit1.png'
-import keychain from '../assets/keychain1.png'
+import board1 from '../assets/products/cuttingBoards.png'
+import board2 from '../assets/products/board2.png'
+import iron1 from '../assets/products/ironSuit1.png'
+import keychain from '../assets/products/keychain1.png'
 
 const projectLanding = () => {
   return (
-    <div className=' flex flex-col max-md:flex-col-reverse pb-[5vh] pt-[10vh] bg-zinc-900 justify-center items-center overflow-hidden '>
+    <div className=' flex flex-col max-md:flex-col-reverse pt-[10vh] bg-zinc-900 justify-center items-center overflow-hidden '>
 
       <ImageCycle className="flex-row w-[100%] h-[40vh] overflow-hidden my-12 overflow-x-hidden">  
         <img src={board1} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] shadow-sm overflow-hidden absolute shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll"/>
