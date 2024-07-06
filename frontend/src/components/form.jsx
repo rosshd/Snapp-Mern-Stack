@@ -1,4 +1,5 @@
 import React from 'react'
+import snapLogoBanner from "../assets/mainLogo.png"
 
 const form = () => {
     const onSubmit = async (event) => {
@@ -25,7 +26,7 @@ const form = () => {
       };
     
       return (
-          <form onSubmit={onSubmit} className='md:w-[50dvw] w-[75dvw] h-[70vh] md:h-[60vh] flex flex-col justify-center self-center gap-3 px-4 rounded-lg
+          <form onSubmit={onSubmit} className='md:w-[50dvw] w-[75dvw] h-[70vh] md:h-[60vh] flex flex-col justify-center self-center gap-3 px-4 rounded-lg drop-shadow-lg
           bg-zinc-700 bg-opacity-10'>
             <input placeholder='Name' type="text" name="name" className='rounded-br-xl rounded-tl-md bg-zinc-700 text-zinc-200 shadow-sm shadow-zinc-400'></input>
             <input placeholder='Email' type="email" name="email" className=' rounded-br-xl bg-zinc-700 text-zinc-200 shadow-sm shadow-zinc-400'/>
