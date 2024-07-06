@@ -18,7 +18,7 @@ const heading = () => {
 
                 <div className='flex flex-row items-center my-2 justify-center'>
                     <Button href='/about' className='mr-2'>
-                        <h1>About Our 3D Printing</h1>
+                        <h1>About Us</h1>
                     </Button>
                     <Button href='/serviceInquiry' className='ml-2'>
                         <span>Get a Quote</span>
