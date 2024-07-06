@@ -8,16 +8,16 @@ import keychain from '../assets/keychain1.png'
 
 const projectLanding = () => {
   return (
-    <div className='h-[100vh] flex flex-col max-md:flex-col-reverse py-10 bg-zinc-900 justify-center items-center '>
+    <div className=' flex flex-col max-md:flex-col-reverse pb-[5vh] pt-[10vh] bg-zinc-900 justify-center items-center overflow-hidden '>
 
-      <ImageCycle className="flex-row w-[100%] h-[50%] xl:mt-44 overflow-hidden overflow-x-hidden">  
+      <ImageCycle className="flex-row w-[100%] h-[40vh] overflow-hidden my-12 overflow-x-hidden">  
         <img src={board1} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] shadow-sm overflow-hidden absolute shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll"/>
         <img src={iron1} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] shadow-sm overflow-hidden absolute  shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-2000"/>
         <img src={board2} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] shadow-sm overflow-hidden absolute shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-4000"/>
         <img src={keychain} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] shadow-sm overflow-hidden absolute shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-6000"/>
       </ImageCycle>
       
-      <div className='flex flex-row justify-center items-center px-16 h-[50%] max-md:mt-6'>
+      <div className='flex flex-row justify-center items-center px-16 h-[40vh] max-md:mt-6'>
         <div className='h-fit flex flex-col gap-4 justify-center items-center max-md:self-start'>
           <h1 className='text-white opacity-80 w-[50dvw] max-md:w-[80dvw] text-center drop-shadow-lg rounded-lg bg-black bg-opacity-15 p-4 border-2 border-gray-400'>
             Explore limitless creativity with services tailored to bring your wildest ideas to life. 
