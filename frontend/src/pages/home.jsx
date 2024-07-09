@@ -29,11 +29,11 @@ const Home = () => {
         <NavBar />
 
         <Heading />
-        <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
+        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
         <Projects/>
-        <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
+        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
         <Uses/>
-        <div className='w-72 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
+        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
 
         <div className='flex-row items-center w-dvw h-dvh bg-zinc-900 min-h-dvh'>
             <h1>hey</h1>

@@ -2,7 +2,9 @@ import React from 'react'
 
 const ServicePage = () => {
   return (
-    <div>ServicePage</div>
+    <div>
+      <h1>Projects</h1>
+    </div>
   )
 }
 
