@@ -13,6 +13,9 @@ export default {
         '4000': '4000ms',
         '6000': '6000ms',
       },
+      fontFamily: {
+        rancho: ["rancho", "cursive"],
+      },
       animation: {
         "text-reveal": "text-reveal 2s",
         "infinite-scroll": "infinite-scroll linear 8s infinite",

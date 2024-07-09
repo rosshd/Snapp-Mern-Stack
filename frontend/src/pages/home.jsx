@@ -25,19 +25,15 @@ const Home = () => {
         })
   }, [])
   return (
-    <div className='bg-zinc-900 h-fit flex flex-col max-w-[100dvw] overflow-auto justify-center items-center'>
+    <div className='bg-zinc-50 dark:bg-zinc-900 h-fit flex flex-col max-w-[100dvw] overflow-auto justify-center items-center'>
         <NavBar />
 
         <Heading />
-        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
+        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'></div>
         <Projects/>
-        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
+        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'></div>
         <Uses/>
-        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300'></div>
-
-        <div className='flex-row items-center w-dvw h-dvh bg-zinc-900 min-h-dvh'>
-            <h1>hey</h1>
-        </div>
+        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'></div>
         
     </div>
   )
