@@ -8,17 +8,17 @@ const router = express.Router();
 router.post('/', async (req, res) => {
     try {
         if (
-            !req.body.title ||
-            !req.body.cost
+            !req.body.picture ||
+            !req.body.description
         )   {
             return response.status(400).send({ 
-                message: 'Send all required fields: title, author, publisher', 
+                message: 'Send all required fields: picture, desription', 
             });       
 
         }
         const newService = {
-            title: req.body.title,
-            cost: req.body.cost,
+            picture: req.body.picture,
+            description: req.body.description,
         };
 
         const service = await Service.create(newService);
@@ -64,11 +64,11 @@ router.get('/:id', async (req, res) => {
 router.put('/:id', async (req, res) => {
     try{
         if (
-            !req.body.title ||
-            !req.body.cost
+            !req.body.picture ||
+            !req.body.description
         )   {
             return res.status(400).send({ 
-                message: 'Send all required fields: title, author, publisher', 
+                message: 'Send all required fields: picture, author, publisher', 
             });       
         }
         const { id } = req.params;

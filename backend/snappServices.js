@@ -2,13 +2,13 @@ import mongoose from "mongoose";
 
 const servSchema = mongoose.Schema(
     {
-        title: {
-            type: String,
+        pictures: {
+            type: [Image],
             required: true,
         },
-        cost: {
+        description: {
             type: String,
-            required: false,
+            required: true,
         }
     }
 )
