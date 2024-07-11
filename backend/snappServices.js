@@ -1,16 +1,16 @@
 import mongoose from "mongoose";
 
-const servSchema = mongoose.Schema(
+const serveContent = mongoose.Schema(
     {
-        pictures: {
-            type: [Image],
+        Title: {
+            type: String,
             required: true,
         },
-        description: {
+        Description: {
             type: String,
             required: true,
         }
     }
 )
 
-export const Service = mongoose.model( 'service', servSchema);
+export const Service = mongoose.model( 'service', serveContent);
