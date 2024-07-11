@@ -25,7 +25,7 @@ const Home = () => {
         })
   }, [])
   return (
-    <div className='bg-zinc-50 dark:bg-zinc-900 h-fit flex flex-col max-w-[100dvw] overflow-auto justify-center items-center'>
+    <div className='bg-zinc-50 dark:bg-zinc-900 h-fit flex flex-col max-w-[100dvw] overflow-y-scroll justify-center items-center'>
         <NavBar />
 
         <Heading />

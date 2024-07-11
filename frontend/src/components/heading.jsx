@@ -12,7 +12,7 @@ const heading = () => {
 
             <div className=' justify-center items-center flex flex-col md:py-8 lg:mr-12 max-lg:content-between max-lg:my-4 m-4 rounded-xl drop-shadow-lg'>
 
-                <img src={mainLogo} className='w-4/5 self-center max-lg:max-h-32 bg-white bg-opacity-25 rounded-3xl'></img>
+                <img src={mainLogo} className='w-4/5 self-center max-lg:max-h-32 dark:bg-transparent bg-white bg-opacity-25 rounded-3xl'></img>
                 <h1 className='overflow-hidden text-end text-lg self-end dark:opacity-55 w-4/5 mb-8 max-sm:pr-10 pr-16 font-semibold dark:text-white 
                         animate-text-reveal'>Turning Ideas Into Reality</h1>
 
