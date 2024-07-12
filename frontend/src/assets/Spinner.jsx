@@ -1,10 +1,10 @@
 import React from 'react';
-import logoSpin from './theSnapp.png';
+import logoSpin from './logoIcon.png';
 
 const Spinner = () => {
   return (
-    <div>
-        <source src={logoSpin} type="video/mp4" className='animate-spin duration-500'/>
+    <div className='items-center justify-center flex'>
+        <img src={logoSpin} className='animate-spin h-24 duration-2000'/>
     </div>
   )
 }
