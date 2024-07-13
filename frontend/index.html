@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,14 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SnappLabs</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .no-scrollbar {
-        overflow-x: hidden;
-      }
-    </style>
   </head>
-  <body class="no-scrollbar">
-    <div id="root"></div>
+  <body class="overflow-x-hidden scrollbar-thumb-orange-300 scrollbar-thumb-rounded-full dark:scrollbar-track-zinc-800 scrollbar-track-transparent overflow-y-hidden">
+    <div id="root" class="overflow-x-hidden scrollbar scroll h-screen overflow-y-scroll scrollbar-thumb-orange-300 scrollbar-thumb-rounded-full dark:scrollbar-track-zinc-800 scrollbar-track-transparent"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

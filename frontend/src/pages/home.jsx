@@ -25,16 +25,18 @@ const Home = () => {
         })
   }, [])
   return (
-    <div className='bg-zinc-50 dark:bg-zinc-900 h-fit flex flex-col max-w-[100dvw] overflow-y-scroll justify-center items-center'>
+    <div className='bg-zinc-10 dark:bg-zinc-900 flex flex-col max-w-[100dvw] justify-center items-center'>
+      <html className='scrollbar-thin h-auto overflow-y-scroll flex flex-col justify-center items-center'>
+    
         <NavBar />
-
-        <Heading />
+        <Heading/>
         <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'></div>
         <Projects/>
         <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'></div>
         <Uses/>
         <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'></div>
-        
+              
+      </html>   
     </div>
   )
 }

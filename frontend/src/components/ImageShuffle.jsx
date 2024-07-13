@@ -5,7 +5,7 @@ import { Link, Route } from 'react-router-dom'
 
 const ImageScroller = ( {className, children, onClick} ) => {
 
-    const classes = `items-center justify-center
+    const classes = `items-center
     ${className || ""}
     `;
 

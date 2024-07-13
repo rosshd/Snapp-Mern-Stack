@@ -8,13 +8,13 @@ import keychain from '../assets/products/keychain1.png'
 
 const projectLanding = () => {
   return (
-    <div className=' flex flex-col max-md:flex-col-reverse pt-[10vh] dark:rounded-none dark:bg-zinc-900 bg-zinc-50  rounded-2xl dark:border-none md:border-y-8 border-orange-300 md:bg-zinc-900 justify-center items-center overflow-hidden '>
+    <div className=' flex flex-col w-[75dvw] dark:w-screen py-[5vh] dark:rounded-none dark:bg-zinc-900 bg-zinc-50  rounded-2xl dark:border-none md:border-y-8 border-orange-300 md:bg-zinc-900 justify-center items-center overflow-hidden '>
 
-      <ImageCycle className="flex-row w-[100%] h-[40vh] overflow-hidden my-12 overflow-x-hidden">  
-        <img src={board1} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] shadow-sm overflow-hidden absolute shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll"/>
-        <img src={iron1} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] shadow-sm overflow-hidden absolute  shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-2000"/>
-        <img src={board2} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] shadow-sm overflow-hidden absolute shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-4000"/>
-        <img src={keychain} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] shadow-sm overflow-hidden absolute shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-6000"/>
+      <ImageCycle className="flex flex-row w-[100dvw] h-[300px] xl:h-[60vh] mb-12 z-30 overflow-hidden justify-center relative ">  
+        <img src={board1} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll"/>
+        <img src={iron1} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden  shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-2000"/>
+        <img src={board2} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-4000"/>
+        <img src={keychain} className="w-52 xl:w-[20dvw] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-6000"/>
       </ImageCycle>
       
       <div className='flex flex-row justify-center items-center px-12 h-[40vh] max-md:h-[30vh] max-md:mt-6'>

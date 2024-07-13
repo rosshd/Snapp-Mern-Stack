@@ -43,6 +43,7 @@ export default {
     },
   },
   plugins: [
+    require('tailwind-scrollbar')({ preferredStrategy: 'pseudoelements', nocompatible: true}),
     require("tailwindcss-animate")
   ],
 }
