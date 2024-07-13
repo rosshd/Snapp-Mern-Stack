@@ -12,8 +12,8 @@ const navBar = ( {className} ) => {
         </button>
       </Link>
       <div className='flex-row items-center m-4 h-10 fixed top-0 left-28 bg-opacity-75 md:block hidden bg-zinc-950 rounded-2xl z-40 border-orange-300 border-2 scale-110'>
-        <NavBarSection href='/'>gallery</NavBarSection>
-        <NavBarSection>3D Winder</NavBarSection>  
+        <NavBarSection href='/'>Gallery</NavBarSection>
+        <NavBarSection>Winder</NavBarSection>  
         <NavBarSection>PrintHub</NavBarSection>
         <NavBarSection>Contact Us</NavBarSection>
       </div>
