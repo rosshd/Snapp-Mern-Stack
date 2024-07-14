@@ -1,34 +1,31 @@
 import express from 'express';
-import { Service } from '../snappServices.js';
-
+import multer from 'multer';
+import Service from '../snappServices.js';
 const router = express.Router();
 
+const upload = multer({ dest: 'uploads/' });
 
 
-router.post('/', async (req, res) => {
-    try {
-        if (
-            !req.body.Title ||
-            !req.body.Description
-        )   {
-            return response.status(400).send({ 
-                message: 'Send all required fields: Title, desription', 
-            });       
+router.post('/', upload.single('File'), async (req, res) => {
+  try {
+    const { Title, Description, Link } = req.body;
+    const File = req.file ? req.file.path : ''; 
 
-        }
-        const newService = {
-            Title: req.body.Title,
-            Description: req.body.Description,
-        };
+    const newService = new Service({
+      Title,
+      Description,
+      Link,
+      File,
+    });
 
-        const service = await Service.create(newService);
+    await newService.save();
 
-        return res.status(201).send(service);
-    } catch(error) {
-        console.log(error.message);
-        res.status(500).send({ message: error.message });       
-    }
-})
+    res.status(201).json({ success: true, message: 'Service created successfully' });
+  } catch (error) {
+    console.error('Error saving service:', error);
+    res.status(500).json({ success: false, message: 'Failed to create service' });
+  }
+});
 
 //get all services offered
 router.get('/', async (req, res) => {
@@ -106,4 +103,4 @@ router.delete('/:id', async (req, res) => {
     }
 })
 
-export default router;
+export default router

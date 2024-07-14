@@ -3,6 +3,8 @@ import ironsuit1 from '../assets/products/ironSuit1.png'
 import Spinner from '../assets/Spinner.jsx'
 import axios from 'axios'
 import Navbar from '../components/navBar.jsx'
+import Button from '../components/theButton.jsx'
+const Uploads = '../../../backend/uploads/'
 
 
 
@@ -24,11 +26,11 @@ const ServicePage = () => {
   }, []);
 
   const leftDiv = ( services ) => (
-    <div className='h-[40vh] flex flex-col w-screen justify-center max-md:items-center dark:bg-zinc-800 bg-zinc-50'>
-      <div className='h-[30vh] flex flex-row justify-center gap-[5%] items-center w-[60%] py-10 bg-zinc-700 dark:bg-zinc-900 rounded-3xl md:ml-[3%] border-orange-300 border-y-8'>
+    <div className='h-[50vh] flex flex-col w-screen justify-center max-md:items-center dark:bg-zinc-800 bg-zinc-50'>
+      <div className='h-[40vh] flex flex-row justify-center gap-[5%] items-center w-[60%] py-10 bg-zinc-700 dark:bg-zinc-900 rounded-3xl md:ml-[3%] border-orange-300 border-y-8'>
         <div className='flex flex-row gap-2'>
           <div className='h-full flex flex-col justify-center items-stretch overflow-hidden'>
-            <img src={ironsuit1} className='h-[31vh]'/>
+            <img src={Uploads + services.File} className='h-[31vh]'/>
             </div>
           <div className='h-full flex flex-col justify-center gap-[1vh] items-center overflow-hidden'>
             <img src={ironsuit1} className='h-[15vh]'/>
@@ -36,16 +38,21 @@ const ServicePage = () => {
           </div>
         </div>
         <div className='h-full w-[50%] rounded-lg bg-opacity-20 bg-zinc-900 px-8 flex flex-col items-center justify-center'>
-          <h1 className='text-white text-center text-xs'>{services.Description}
-          </h1>
+          <h1 className='text-white text-center h-10 text-base'>{services.Title}</h1>
+          <h1 className='text-white text-center text-xs'>{services.Description}</h1>
+          {services.Link == null ? (
+            <div/>
+          ) : (
+            <Button/>
+          )}
         </div>
       </div>
     </div>
   )
 
   const rightDiv = (  services ) => (
-    <div className='h-[40vh] flex flex-col w-screen justify-center max-md:items-center dark:bg-zinc-800 bg-zinc-50'>
-      <div className='h-[30vh] flex flex-row justify-center self-end gap-[5%] items-center w-[60%] py-10 bg-zinc-700 dark:bg-zinc-900 rounded-3xl md:mr-[3%] border-orange-300 border-y-8'>
+    <div className='h-[50vh] flex flex-col w-screen justify-center max-md:items-center dark:bg-zinc-800 bg-zinc-50'>
+      <div className='h-[40vh] flex flex-row justify-center self-end gap-[5%] items-center w-[60%] py-10 bg-zinc-700 dark:bg-zinc-900 rounded-3xl md:mr-[3%] border-orange-300 border-y-8'>
         <div className='flex flex-row gap-2'>
           <div className='h-full flex flex-col justify-center items-stretch overflow-hidden'>
             <img src={ironsuit1} className='h-[31vh]'/>
@@ -56,8 +63,13 @@ const ServicePage = () => {
           </div>
         </div>
         <div className='h-full w-[50%] rounded-lg bg-opacity-20 bg-zinc-900 px-8 flex flex-col items-center justify-center'>
-          <h1 className='text-white text-center text-xs'>{services.Description}
-          </h1>
+        <h1 className='text-white text-center h-10 text-base'>{services.Title}</h1>
+          <h1 className='text-white text-center text-xs'>{services.Description}</h1>
+          {services.Link == null ? (
+            <div/>
+          ) : (
+            <Button/>
+          )}
         </div>
       </div>
     </div>
@@ -68,7 +80,7 @@ const ServicePage = () => {
   return (
     <div className='flex flex-col w-screen dark:bg-zinc-800 bg-zinc-50 pt-8 items-center justify-center'>
       <Navbar/>
-      <h1 className='text-center font-rancho text-9xl text-black rounded-2xl border-b-orange-300 border-b-8 dark:text-white'>Gallery</h1>
+      <h1 className='text-center font-rancho text-9xl text-black rounded-2xl mb-8 border-b-orange-300 border-b-8 dark:text-white'>Gallery</h1>
         
         {loading ? (
           <div className='h-[80vh] dark:bg-zinc-800 bg-zinc-50 flex items-center justify-center'>
