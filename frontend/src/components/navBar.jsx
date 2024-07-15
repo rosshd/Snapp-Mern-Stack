@@ -1,5 +1,5 @@
 import React from 'react'
-import logoIcon from '../assets/logoIcon.png'
+import logoIcon from '../assets/logoIcon.webp'
 import NavBarSection from './NavBarSection'
 import { Link, Route } from 'react-router-dom'
 

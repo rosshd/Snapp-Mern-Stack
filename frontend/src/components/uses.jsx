@@ -1,12 +1,12 @@
 import React from 'react'
-import art from '../assets/icons/art.png'
-import education from '../assets/icons/education.png'
-import goods from '../assets/icons/goods.png'
-import healthcare from '../assets/icons/healthcare.png'
-import theatre from '../assets/icons/theatre.png'
-import tools from '../assets/icons/tools.png'
-import manufacturing from '../assets/icons/manufacturing.png'
-import plane from '../assets/icons/plane.png'
+import art from '../assets/icons/art.webp'
+import education from '../assets/icons/education.webp'
+import goods from '../assets/icons/goods.webp'
+import healthcare from '../assets/icons/healthcare.webp'
+import theatre from '../assets/icons/theatre.webp'
+import tools from '../assets/icons/tools.webp'
+import manufacturing from '../assets/icons/manufacturing.webp'
+import plane from '../assets/icons/plane.webp'
 
 const uses
  = () => {

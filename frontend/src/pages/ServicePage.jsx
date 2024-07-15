@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ironsuit1 from '../assets/products/ironSuit1.png'
+import ironsuit1 from '../assets/products/ironSuit1.webp'
 import Spinner from '../assets/Spinner.jsx'
 import axios from 'axios'
 import Navbar from '../components/navBar.jsx'

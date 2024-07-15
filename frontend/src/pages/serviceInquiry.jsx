@@ -1,8 +1,8 @@
 import React from 'react'
 import NavBar from '../components/navBar.jsx'
 import Form from "../components/form.jsx"
-import inquiryDark from '../assets/inquiryDark.png'
-import inquiryPNG from "../assets/inquiry.png"
+import inquiryDark from '../assets/inquiryDark.webp'
+import inquiryPNG from "../assets/inquiry.webp"
 
 const shop = () => {
   return (

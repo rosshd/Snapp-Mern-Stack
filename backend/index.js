@@ -6,13 +6,15 @@ import cors from 'cors';
 import morgan from 'morgan';
 import multer from "multer";
 
+const compression = require('compression');
+
 const app = express();
 const router = express.Router();
 
 // Middleware for parsing request body
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+app.use(compression);
 // Middleware for logging
 app.use(morgan('dev'));
 

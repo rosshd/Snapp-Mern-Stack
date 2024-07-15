@@ -15,7 +15,7 @@ router.post('/', upload.single('File'), async (req, res) => {
       Title,
       Description,
       Link,
-      File,
+      File
     });
 
     await newService.save();
