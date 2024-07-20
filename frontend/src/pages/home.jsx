@@ -4,37 +4,22 @@ import Heading from '../components/heading'
 import NavBar from '../components/navBar'
 import Projects from '../components/projectLanding'
 import Uses from '../components/uses'
+import ContSoci from '../components/contSocials'
 
 const Home = () => {
-
   
-
-  const [services, setServices] = useState([]);
-  const [loading, setLoading] = useState(false);  
-  useEffect(() => {
-    setLoading(true);
-    axios   
-        .get('http://localhost:3000/')
-        .then((res) => {
-            setServices(res.data.data);
-            setLoading(false);
-        })
-        .catch((error) => {
-            console.log(error);
-            setLoading(false);
-        })
-  }, [])
   return (
-    <div className='bg-zinc-10 dark:bg-zinc-900 flex flex-col max-w-[100dvw] justify-center items-center'>
-    
-        <NavBar />
-        <Heading/>
-        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'></div>
-        <Projects/>
-        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'></div>
-        <Uses/>
-        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'></div>
-                
+    <div className=' scrollbar-thin scroll h-screen overflow-x-hidden overflow-y-scroll scrollbar-thumb-orange-300 scrollbar-thumb-rounded-full dark:scrollbar-track-zinc-800 scrollbar-track-transparent 
+    w-screen bg-zinc-300 dark:bg-zinc-900 justify-center items-center '>
+  
+      <Heading/>
+      <NavBar />
+      <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'/>
+      <Projects/>
+      <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'/>
+      <Uses/>
+      <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'/>
+      <ContSoci/>
     </div>
   )
 }

@@ -26,11 +26,11 @@ const ServicePage = () => {
   }, []);
 
   const leftDiv = ( services ) => (
-    <div className='h-[50vh] flex flex-col w-screen justify-center max-md:items-center dark:bg-zinc-800 bg-zinc-50'>
+    <div key={services._id} className='h-[50vh] flex flex-col w-screen justify-center max-md:items-center dark:bg-zinc-800 bg-zinc-50'>
       <div className='h-[40vh] flex flex-row justify-center gap-[5%] items-center w-[60%] py-10 bg-zinc-700 dark:bg-zinc-900 rounded-3xl md:ml-[3%] border-orange-300 border-y-8'>
         <div className='flex flex-row gap-2'>
           <div className='h-full flex flex-col justify-center items-stretch overflow-hidden'>
-            <img src={Uploads + services.File} className='h-[31vh]'/>
+            <img src={services.File} alt={services.Title} className='h-[31vh]'/>
             </div>
           <div className='h-full flex flex-col justify-center gap-[1vh] items-center overflow-hidden'>
             <img src={ironsuit1} className='h-[15vh]'/>
@@ -43,7 +43,7 @@ const ServicePage = () => {
           {services.Link == null ? (
             <div/>
           ) : (
-            <Button/>
+            <Button href={services.Link}/>
           )}
         </div>
       </div>
@@ -51,7 +51,7 @@ const ServicePage = () => {
   )
 
   const rightDiv = (  services ) => (
-    <div className='h-[50vh] flex flex-col w-screen justify-center max-md:items-center dark:bg-zinc-800 bg-zinc-50'>
+    <div key={services._id} className='h-[50vh] flex flex-col w-screen justify-center max-md:items-center dark:bg-zinc-800 bg-zinc-50'>
       <div className='h-[40vh] flex flex-row justify-center self-end gap-[5%] items-center w-[60%] py-10 bg-zinc-700 dark:bg-zinc-900 rounded-3xl md:mr-[3%] border-orange-300 border-y-8'>
         <div className='flex flex-row gap-2'>
           <div className='h-full flex flex-col justify-center items-stretch overflow-hidden'>
@@ -89,7 +89,7 @@ const ServicePage = () => {
         ) : (
           services.map((services, index) => (
             index % 2 == 0 
-            ? leftDiv(services)
+            ? leftDiv(services) 
             : rightDiv(services)
         )))}
     </div>

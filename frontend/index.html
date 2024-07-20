@@ -6,10 +6,17 @@
     <link rel="icon" type="image/svg+xml" href="./src/assets/theSnapp.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SnappLabs</title>
-    <link rel="preload" as="image" href="./src/assets/snappSaber.webp">
+    <link rel="preload" as="image" type="image/webp" href="./src/assets/snappSaber.webp">
+    <link rel="preload" as="image" type="image/webp" href="./src/assets/mainLogo.webp">
   </head>
   <body class="overflow-x-hidden scrollbar-thumb-orange-300 scrollbar-thumb-rounded-full dark:scrollbar-track-zinc-800 scrollbar-track-transparent overflow-y-hidden">
-    <div id="root" class="overflow-x-hidden scrollbar scroll h-screen overflow-y-scroll scrollbar-thumb-orange-300 scrollbar-thumb-rounded-full dark:scrollbar-track-zinc-800 scrollbar-track-transparent"></div>
+    <picture class="hidden">
+      <img src="./src/assets/snappSaber.webp">
+      <img src="./src/assets/mainLogo.webp">
+    </picture>
+    <div id="root" class="overflow-x-hidden"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
+

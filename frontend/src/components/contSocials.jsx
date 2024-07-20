@@ -1,0 +1,48 @@
+import React from 'react'
+import mail from '../assets/mail.webp'
+import youtube from '../assets/youtube-64.webp'
+import instagram from '../assets/instagram-64.webp'
+import facebook from '../assets/facebook-64.webp'
+import {Link, Route} from 'react-router-dom'
+
+const contSocials = () => {
+  return (
+    <div className='flex flex-col justify-center items-center mt-10 mb-6 border-2 bg-zinc-800 bg-opacity-80 border-yellow-400 py-2'>
+        <div>
+            <h1 className='text-orange-300 font-bold dark:text-white'>Contact Us!</h1>
+        </div>
+        <div className='flex flex-row'>
+            
+            <Link rel='path' to='../serviceInquiry'>
+                <button>
+                    <img src={mail} alt="Mail" className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out mx-2'/>
+                </button>
+            </Link>
+            
+            
+            <Link to='https://www.youtube.com/@SnappLabs/videos'>
+                <button>
+                    <img src={youtube} alt="Youtube" className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out mx-2'/>
+                </button>
+            </Link>
+
+            
+            <Link to='https://www.instagram.com/snapplabs/'>
+                <button>
+                    <img src={instagram} alt="Instagram" className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out mx-2'/>
+                </button>
+            </Link>
+            
+            
+            <Link to='https://www.facebook.com/'>
+                <button>
+                    <img src={facebook} alt="facebook" className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out'/>
+                </button>
+            </Link>
+        </div>
+
+    </div>
+  )
+}
+
+export default contSocials

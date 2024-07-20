@@ -6,18 +6,18 @@ const CreateService = () => {
   const [Title, setTitle] = useState('');
   const [Description, setDescription] = useState('');
   const [Link, setLink] = useState('');
-  const [File, setFile] = useState(null); // State for file
+  const [File, setFile] = useState(null);
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
   const postContent = async (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
 
     const formData = new FormData();
     formData.append('Title', Title);
     formData.append('Description', Description);
     formData.append('Link', Link);
-    formData.append('File', File); // Append file to form data
+    formData.append('File', File);
 
     setLoading(true);
     try {
@@ -45,7 +45,7 @@ const CreateService = () => {
         <input type="text" placeholder='Description' value={Description} onChange={(e) => setDescription(e.target.value)} />
         <input type="text" placeholder='Link' value={Link} onChange={(e) => setLink(e.target.value)} />
         <input type="file" name="File" onChange={handleFileChange} />
-        <button type="submit">Submit</button>
+        <button type="submit" value="submit">Submit</button>
       </form>
     </div>
   );

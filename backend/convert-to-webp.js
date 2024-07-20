@@ -2,8 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const inputDir = '../frontend/src/assets/icons';
-const outputDir = '../frontend/src/assets/icons';
+const inputDir = '../frontend/src/assets';
+const outputDir = '../frontend/src/assets';
 
 // Ensure output directory exists
 if (!fs.existsSync(outputDir)) {
