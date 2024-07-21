@@ -4,20 +4,31 @@ import mongoose from "mongoose";
 import ServiceRoute from './routes/ServiceRoute.js';
 import cors from 'cors';
 import compression from 'compression';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 const app = express();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 app.use(compression());
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:5173',
+    optionsSuccessStatus: 200
+}));
+
+const uploadsPath = path.join(__dirname, 'uploads');
+app.use('/uploads', express.static(uploadsPath));
+
 app.use('/myServices', ServiceRoute);
+
 app.get('/', (req, res) => {
   res.send('Hello, World!');
 });
 
-mongoose.connect(mongoDBURL
-)
+mongoose.connect(mongoDBURL)
 .then(() => {
   console.log('App is connected to MongoDB');
   app.listen(PORT, () => {

@@ -34,7 +34,6 @@ export default {
       animation: {
         "text-reveal": "text-reveal 2s",
         "infinite-scroll": "infinite-scroll linear 8s infinite",
-        
       },
       keyframes: {
         "text-reveal": {
@@ -53,7 +52,7 @@ export default {
             transform: "translate(0,0)",
             
           },
-        }
+        },
       },
     },
   },

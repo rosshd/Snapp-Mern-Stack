@@ -1,30 +1,42 @@
 import express from 'express';
 import multer from 'multer';
 import Service from '../snappServices.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 const router = express.Router();
 
+// Create __dirname for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const storage = multer.diskStorage({
-    destination: function (req, File, cb) {
-        cb(null, 'uploads/');
+    destination: function (req, file, cb) {
+        cb(null, path.join(__dirname, '..', 'uploads')); // Ensure correct path for uploads
     },
-    filename: function (req, File, cb) {
+    filename: function (req, file, cb) {
         cb(null, file.originalname);
     }
 });
 
 const upload = multer({ storage: storage });
 
-router.post('/', upload.single('File'), async (req, res) => {
+router.post('/', upload.array('files', 3), async (req, res) => {
     try {
-        const { Title, Description } = req.body;
-        const Link = req.file ? `${req.protocol}://${req.get('host')}/${req.file.path}` : null;
+        const { Title, Description, Link } = req.body;
+        const files = req.files;
+
+        if (!files) {
+            return res.status(400).json({ success: false, message: 'No files uploaded' });
+        }
+
+        const fileNames = files.map(file => file.filename);
 
         const newService = new Service({
             Title,
             Description,
             Link,
-            File: req.File.filename
+            File: fileNames
         });
 
         await newService.save();
@@ -36,11 +48,9 @@ router.post('/', upload.single('File'), async (req, res) => {
     }
 });
 
-
 router.get('/', async (req, res) => {
     try {
         const services = await Service.find({});
-
         res.status(200).json({
             count: services.length,
             data: services
@@ -51,67 +61,52 @@ router.get('/', async (req, res) => {
     }
 });
 
-
-//get singular service
 router.get('/:id', async (req, res) => {
     try {
-
         const { id } = req.params;
-
         const service = await Service.findById(id);
-
         return res.status(200).json(service);
-    } catch (error){
+    } catch (error) {
         console.log(error.message);
-        res.status(500).send({ message: error.message });       
+        res.status(500).send({ message: error.message });
     }
 });
 
-//update service
 router.put('/:id', async (req, res) => {
-    try{
-        if (
-            !req.body.Title ||
-            !req.body.Description || 
-            !req.body.File
-        )   {
-            return res.status(400).send({ 
-                message: 'Send all required fields: Title, author, publisher', 
-            });       
+    try {
+        if (!req.body.Title || !req.body.Description || !req.body.file) {
+            return res.status(400).send({
+                message: 'Send all required fields: Title, author, publisher',
+            });
         }
         const { id } = req.params;
-
         const result = await Service.findByIdAndUpdate(id, req.body);
-        
+
         if (!result) {
             return res.status(404).json({ message: 'Service not found' });
         }
 
-        return res.status(200).send({ message: 'Service sucessfully updated' });
-        
-    } catch (error){
+        return res.status(200).send({ message: 'Service successfully updated' });
+    } catch (error) {
         console.log(error.message);
-        res.status(500).send({ message: error.message });       
+        res.status(500).send({ message: error.message });
     }
 });
 
-//delete service
 router.delete('/:id', async (req, res) => {
-    try{
+    try {
         const { id } = req.params;
-
         const result = await Service.findByIdAndDelete(id);
-        
+
         if (!result) {
             return res.status(404).json({ message: 'Service not found' });
         }
 
-        return res.status(200).send({ message: 'Service sucessfully deleted' });
-        
-    } catch (error){
+        return res.status(200).send({ message: 'Service successfully deleted' });
+    } catch (error) {
         console.log(error.message);
-        res.status(500).send({ message: error.message });       
+        res.status(500).send({ message: error.message });
     }
 });
 
-export default router
+export default router;

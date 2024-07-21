@@ -6,9 +6,14 @@ const CreateService = () => {
   const [Title, setTitle] = useState('');
   const [Description, setDescription] = useState('');
   const [Link, setLink] = useState('');
-  const [File, setFile] = useState(null);
+  const [files, setFiles] = useState([]);
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
+
+  const handleFileChange = (e) => {
+    const selectedFiles = Array.from(e.target.files);
+    setFiles(prevFiles => [...prevFiles, ...selectedFiles]);
+  };
 
   const postContent = async (e) => {
     e.preventDefault();
@@ -17,7 +22,9 @@ const CreateService = () => {
     formData.append('Title', Title);
     formData.append('Description', Description);
     formData.append('Link', Link);
-    formData.append('File', File);
+    files.forEach((file, index) => {
+      formData.append(`files`, file);
+    });
 
     setLoading(true);
     try {
@@ -32,22 +39,32 @@ const CreateService = () => {
       setLoading(false);
       console.error('Error posting data:', error);
     }
-  }
-
-  const handleFileChange = (e) => {
-    setFile(e.target.files[0]); // Update file state
   };
 
   return (
-    <div className='flex flex-col h-screen items-center justify-center'>
-      <form onSubmit={postContent} encType='multipart/form-data' className='flex flex-col h-screen items-center justify-center gap-4'>
-        <input type="text" placeholder='Title' value={Title} onChange={(e) => setTitle(e.target.value)} />
-        <input type="text" placeholder='Description' value={Description} onChange={(e) => setDescription(e.target.value)} />
-        <input type="text" placeholder='Link' value={Link} onChange={(e) => setLink(e.target.value)} />
-        <input type="file" name="File" onChange={handleFileChange} />
-        <button type="submit" value="submit">Submit</button>
+  <div>
+    <div>
+      <form onSubmit={postContent} encType='multipart/form-data' name='create service' className='flex flex-col h-[50vh] items-center justify-center gap-4'>
+        <input type="text" name='title' placeholder='Title' value={Title} onChange={(e) => setTitle(e.target.value)} required/>
+        <input type="text" name='description' placeholder='Description' value={Description} onChange={(e) => setDescription(e.target.value)} required/>
+        <input type="text" name='link' placeholder='Link' value={Link} onChange={(e) => setLink(e.target.value)} />
+        <input type="file" name="files" multiple onChange={handleFileChange} required/>
+        <button type="submit" disabled={loading}>{loading ? 'Submitting...' : 'Submit'}</button>
       </form>
     </div>
+    <div>
+      {files.length > 0 && (
+        <div className='justify-center'>
+          <h3>Selected Files:</h3>
+          <ul>
+            {files.map((file, index) => (
+              <li key={index}>{file.name}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  </div>
   );
 };
 
