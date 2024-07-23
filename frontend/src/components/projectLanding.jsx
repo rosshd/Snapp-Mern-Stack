@@ -8,17 +8,17 @@ import keychain from '../assets/products/keychain1.webp'
 
 const projectLanding = () => {
   return (
-    <div className='flex flex-col items-center justify-center mb-16 bg-zinc-300'>
-      <div className=' flex flex-col w-[66dvw] dark:w-screen py-[5vh] dark:rounded-none dark:bg-zinc-900  rounded-2xl dark:border-none md:border-x-8 border-orange-300 bg-zinc-900 justify-center items-center overflow-hidden '>
+    <div className='flex flex-col items-center justify-center bg-zinc-300'>
+      <div className=' flex flex-col w-[66dvw] dark:w-screen max-xl:py-[5vh] dark:rounded-none dark:bg-zinc-900  rounded-2xl dark:border-none md:border-x-8 border-orange-300 bg-zinc-900 justify-center items-center overflow-hidden '>
 
-        <ImageCycle className="flex flex-row w-[100%] h-[300px] xl:h-[60vh] mb-12 z-30 overflow-hidden justify-center relative">  
+        <ImageCycle className="flex flex-row w-[100%] h-[300px] xl:h-[50vh] mb-12 z-30 overflow-hidden justify-center relative">  
           <img src={board1} className="w-52 h-[219.64px] xl:w-[302px] xl:h-[318.98px] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll"/>
           <img src={iron1} className="w-52 h-[276px] xl:w-[302px] xl:h-[401.33px] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden  shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-2000"/>
           <img src={board2} className="w-52 h-[276px] xl:w-[302px] xl:h-[401.33px] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-4000"/>
           <img src={keychain} className="w-52 h-[229.77px] xl:w-[302px] xl:h-[333.8px] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-6000"/>
         </ImageCycle>
 
-        <div className='flex flex-row justify-center items-center px-12 h-[40vh] max-md:h-[30vh] max-md:mt-6'>
+        <div className='flex flex-row justify-center items-center px-12 xl:h-[30vh] h-[40vh] max-md:h-[30vh] max-md:mt-6'>
           <div className='h-fit flex flex-col gap-4 justify-center items-center max-md:self-start'>
             <h1 className='text-white opacity-80 w-[50dvw] max-md:w-[80dvw] text-center drop-shadow-lg rounded-lg p-4 border-2 border-gray-400'>
               Explore limitless creativity with services tailored to bring your wildest ideas to life. 

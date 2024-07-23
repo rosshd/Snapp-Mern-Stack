@@ -5,18 +5,18 @@ import Button from './theButton'
 
 const heading = () => {
     return (
-    <div className= 'flex flex-col justify-center max-md:justify-start items-center bg-gradient-to-b to-zinc-300 from-zinc-50 transition-colors dark:bg-zinc-900 h-[95vh] overflow-hidden'>
+    <div className= 'flex flex-col justify-center max-md:justify-start items-center bg-gradient-to-b to-zinc-300 from-zinc-50 transition-colors dark:from-zinc-800 dark:to-zinc-900 h-[95vh] overflow-hidden'>
 
         <div className='flex max-md:flex-col justify-center items-center flex-row
-          w-screen p-4 lg:flex-row max-md:justify-start max-md:py-20 lg:gap-10'>
+          w-screen p-4 lg:flex-row max-md:justify-start max-md:py-20 xl:gap-40 lg:gap-10'>
 
             <div className=' justify-center items-center flex flex-col md:px-8 md:mr-8 max-lg:content-between max-md:my-4 rounded-xl drop-shadow-lg'>
                 <picture>
-                    <img src={mainLogo} className='max-h-[80-px] max-w-[400px] xl:max-h-[120px] xl:max-w-[600px] lg:scale-125 self-center max-lg:max-h-32 dark:bg-transparent scale-125 rounded-xl' alt="Snapp Labs"></img>
+                    <img src={mainLogo} className='max-h-[80-px] max-w-[400px] xl:mb-8 xl:max-h-[120px] xl:max-w-[600px] lg:scale-125 self-center max-lg:max-h-32 dark:bg-transparent scale-125 rounded-xl' alt="Snapp Labs"></img>
                 </picture><h1 className='overflow-hidden text-end text-lg self-end dark:opacity-55 w-54 mb-8 font-semibold dark:text-white 
                         animate-text-reveal'>Turning Ideas Into Reality</h1>
 
-                <div className='flex flex-row items-center my-2 justify-center'>
+                <div className='flex flex-row items-center max-xl:my-2 justify-center'>
                     <Button href='/about' className='mr-2'>
                         <h1>About Us</h1>
                     </Button>

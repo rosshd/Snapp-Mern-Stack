@@ -14,11 +14,17 @@ const Home = () => {
   
       <Heading/>
       <NavBar />
-      <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'/>
+      <div className='w-screen flex flex-col justify-center items-center'>
+        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'/>
+      </div>
       <Projects/>
-      <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'/>
+      <div className='w-screen flex flex-col mb-12 justify-center items-center'>
+        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'/>
+      </div>
       <Uses/>
-      <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'/>
+      <div className='w-screen flex flex-col justify-center items-center'>
+        <div className='w-72 max-md:w-36 h-1 rounded-lg bottom-[100%] self-center justify-self-center bg-orange-300 hidden max-md:block dark:block'/>
+      </div>
       <ContSoci/>
     </div>
   )
