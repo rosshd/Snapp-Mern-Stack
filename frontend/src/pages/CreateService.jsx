@@ -112,7 +112,7 @@ const CreateService = () => {
         <form onSubmit={postContent} encType='multipart/form-data' name='create service' className='flex flex-col items-center justify-center gap-4'>
           <input type="text" name='title' placeholder='Title' value={Title} className='border-2 w-full rounded-md self-start' onChange={(e) => setTitle(e.target.value)} required/>
           <input type="text" name='description' placeholder='Description' value={Description} className='border-2 w-full rounded-md self-start' onChange={(e) => setDescription(e.target.value)} required/>
-          <input type="text" name='link' placeholder='Link' value={Link} className='border-2 w-full rounded-md self-start' onChange={(e) => setLink(e.target.value)} />
+          <input type="text" name='link' placeholder='Link(not required)' value={Link} className='border-2 w-full rounded-md self-start' onChange={(e) => setLink(e.target.value)} />
           <input type="file" name="files" multiple className='self-start dark:text-white' onChange={handleFileChange} required/>
           <button type="submit" disabled={loading} className='dark:text-white rounded-md border-2 border-orange-300 py-2 px-4 mt-8'>{loading ? 'Submitting...' : 'Submit'}</button> 
             {files.length > 0 && (
