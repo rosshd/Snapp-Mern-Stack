@@ -27,13 +27,13 @@ const ServicePage = () => {
     const isLeftDiv = index % 2 === 0;
     return (
       <div key={service._id} className=' flex flex-col flex-wrap w-screen justify-center mb-[10vh] max-md:items-center'>
-        <div className={`flex flex-row justify-center items-center py-4 rounded-md overflow-hidden bg-zinc-800 dark:bg-zinc-900 border-orange-300 max-h-[60vh] max-w-[60dvw] w-fit border-y-8 ${isLeftDiv ? 'md:self-start' : 'md:self-end'}`}>
-          <div className='h-full max-w-[40%]'>
-          <GalPannel files={service.File} />
+        <div className={`flex flex-row max-md:flex-col max-md:p-12 justify-center items-center px-2 py-4 rounded-md overflow-hidden bg-zinc-800 dark:bg-zinc-900 max-md:bg-opacity-95 border-orange-300 max-h-[60vh] max-md:max-h-[85vh] max-w-[60dvw] max-md:max-w-[75dvw] border-y-8 ${isLeftDiv ? 'md:self-start' : 'md:self-end'}`}>
+          <div className='h-full flex max-md:max-w-[100%] max-w-[40%]'>
+            <GalPannel files={service.File} />
           </div>
-          <div className='h-full min-w-[45%] max-w-[55%] rounded-lg px-4 flex flex-col overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-transparent'>
+          <div className='h-full max-md:w-[100%] md:max-w-[55%] rounded-lg py-4 px-4 flex flex-col overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-transparent'>
             <h1 className='text-white text-start text-2xl mb-4 font-bold'>{service.Title}</h1>
-            <h1 className='text-white text-opacity-50 text-xs text-start indent-4 mb-2'>{service.Description}</h1>
+            <h1 className='text-white text-opacity-50 text-xs text-start indent-4 mb-4'>{service.Description}</h1>
             {service.Link ? (
               <Button href={service.Link} className='h-12'>
                 <h1 className='text-xs opacity-85'>See here</h1>

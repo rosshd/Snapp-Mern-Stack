@@ -11,7 +11,7 @@ const shop = () => {
       <div className='flex flex-row justify-center items-center h-[10%] space-x-2 mb-4 relative'>
         <img src={inquiryPNG} className='h-[100%] hidden dark:block opacity-90 dark:bg-none rounded-md px-2 border-b-orange-400 border-b-2' />
         <img src={inquiryDark} className='h-[100%] dark:hidden opacity-90 dark:bg-none rounded-md px-2 border-b-orange-400 border-b-2' />
-        <h1 className='underline self-end dark:text-gray-200 text-orange-400 absolute translate-x-[100%] xl:translate-x-[120%] translate-y-[2px] opacity-80 drop-shadow-md'>sales@snapplabs.co</h1>
+        <h1 className='underline self-end max-md:translate-x-[120%] dark:text-gray-200 text-orange-400 absolute translate-x-[100%] xl:translate-x-[120%] translate-y-[2px] opacity-80 drop-shadow-md'>sales@snapplabs.co</h1>
       </div>
       <Form />
       
