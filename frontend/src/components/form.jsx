@@ -20,7 +20,7 @@ export default function Form() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully, Please wait 0-3 days for a response in your inbox.");
+      setResult("Form submitted successfully. Please wait 0-3 days.");
       event.target.reset();
     } else {
       console.log("Error", data);
