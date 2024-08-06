@@ -18,9 +18,9 @@ const projectLanding = () => {
           <img src={keychain} className="w-52 h-[229.77px] xl:w-[302px] xl:h-[333.8px] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-6000"/>
         </ImageCycle>
 
-        <div className='flex flex-row justify-center items-center px-12 h-[30vh] max-md:mt-6'>
+        <div className='flex flex-row justify-center items-center px-12 max-md:mt-6'>
           <div className='h-fit flex flex-col gap-4 justify-center items-center max-md:self-start'>
-            <h1 className='dark:text-white md:text-white opacity-80 w-[50dvw] max-md:w-[80dvw] text-center drop-shadow-lg rounded-lg p-4 border-2 border-zinc-800 dark:border-gray-400'>
+            <h1 className='dark:text-white md:text-white text-start opacity-80 w-[50dvw] max-md:w-[80dvw] drop-shadow-lg rounded-lg p-4 border-2 border-zinc-800 dark:border-gray-400'>
               Explore limitless creativity with services tailored to bring your wildest ideas to life. 
               Specializing in a wide array of 3D solutions including printing, modeling, CNC machining, laser engraving, animation, 
               and filament recycling. If you are interested, check out our gallery of completed projects.</h1>

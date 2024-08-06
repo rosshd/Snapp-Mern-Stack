@@ -12,7 +12,7 @@ const uses
  = () => {
   return (
     <div  className='flex flex-col items-center justify-center bg-zinc-300 dark:bg-zinc-900'>
-      <h1 className='text-6xl font-semibold mb-12 dark:text-white'>Applications</h1>
+      <h1 className='text-6xl max-sm:text-2xl max-sm:mb-2 font-semibold mb-12 dark:text-white'>Applications</h1>
       <div className='grid-cols-4 max-md:grid-cols-2 grid gap-[5dvw] pb-[10vh] max-md:py-[5vh]'>
         <div className='bg-zinc-800 dark:bg-zinc-700 bg-opacity-75 drop-shadow-lg h-[40vh] w-[18dvw] max-md:h-[25vh] max-md:w-[36dvw] rounded-md px-2 py-2 flex flex-col justify-stretch items-center shadow-md shadow-zinc-500 hover:shadow-zinc-100 hover:rounded-xl hover:scale-105 hover:bg-slate-700 transition duration-200'>
           <img loading='lazy' className='w-[10dvw] justify-self-start mb-4' src={art}/>
