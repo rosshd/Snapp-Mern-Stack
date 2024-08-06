@@ -34,7 +34,7 @@ const contSocials = () => {
             </Link>
             
             
-            <Link to='https://www.facebook.com/'>
+            <Link to='https://www.facebook.com/SnappLabs3D/'>
                 <button>
                     <img src={facebook} alt="facebook" className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out'/>
                 </button>
