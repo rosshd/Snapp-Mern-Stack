@@ -7,9 +7,9 @@ import {Link, Route} from 'react-router-dom'
 
 const contSocials = () => {
   return (
-    <div className='flex flex-col justify-center items-center mt-10 mb-6 border-2 bg-zinc-800 bg-opacity-80 dark:bg-transparent dark:border-transparent border-orange-300 py-2'>
+    <div className='flex flex-col justify-center items-center w-screen mt-10 mb-6 border-y-2 bg-zinc-900 bg-opacity-80 dark:bg-transparent dark:border-transparent border-y-orange-300 py-2'>
         <div>
-            <h1 className='text-orange-300 text-3xl mb-2 opacity-80 font-bold dark:text-white'>Contact Us!</h1>
+            <h1 className='text-white text-3xl mb-2 opacity-80 font-bold dark:text-white'>Contact Us!</h1>
         </div>
         <div className='flex flex-row'>
             

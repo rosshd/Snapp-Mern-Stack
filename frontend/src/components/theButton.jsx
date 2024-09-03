@@ -12,14 +12,14 @@ const Button = ( { className, href, onClick, children, px, white} ) => {
 
   const renderButton = () => (
       <button className={classes}>
-        <span className='flex-row flex items-center'>{children}</span>
+        <span className='flex-row text-sm flex items-center'>{children}</span>
       </button>
   )
 
   const renderLink = () => (
     <Link to={href}>
       <button className={classes}>
-        <span className='flex-row flex items-center'>{children}</span>
+        <span className='flex-row text-sm flex items-center'>{children}</span>
       </button>
     </Link>
   )
