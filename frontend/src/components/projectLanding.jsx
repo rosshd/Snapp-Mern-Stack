@@ -1,46 +1,35 @@
-import React from 'react'
-import Button from './theButton'
-import ImageCycle from './ImageShuffle'
-import board1 from '../assets/products/cuttingBoards.webp'
-import board2 from '../assets/products/board2.webp'
-import iron1 from '../assets/products/ironSuit1.webp'
-import keychain from '../assets/products/keychain1.webp'
+import React from 'react';
+import Button from './theButton';
+import board1 from '../assets/products/cuttingBoards.webp';
+import board2 from '../assets/products/board2.webp';
+import iron1 from '../assets/products/ironSuit1.webp';
+import keychain from '../assets/products/keychain1.webp';
 
-const projectLanding = () => {
+const ProjectLanding = () => {
   return (
-    <div className='flex flex-col items-center justify-center bg-zinc-300'>
-      <div className=' flex flex-col w-[66dvw] dark:w-screen max-md:w-screen max-md:bg-transparent py-[5vh] dark:rounded-none dark:bg-zinc-900  rounded-2xl dark:border-none md:border-x-8 border-orange-300 bg-zinc-900 justify-center items-center overflow-hidden '>
+    <div className="flex flex-col items-center mb-[5vh] justify-center bg-gradient-to-b from-zinc-100 to-zinc-300 dark:to-zinc-900 dark:from-zinc-900">
+      <div className="flex flex-col items-center w-[66dvw] dark:w-full max-md:w-screen py-[5vh] rounded-2xl dark:bg-inherit dark:border-none md:border-x-8 border-amber-400 md:bg-zinc-900 overflow-hidden">
 
-        <ImageCycle className="flex flex-row w-[100%] max-xl:h-[300px] xl:h-[450px] lg:mb-12 z-30 overflow-hidden justify-center relative">  
-          <img src={board1} className="w-52 h-[219.64px] xl:w-[302px] xl:h-[318.98px] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll"/>
-          <img src={iron1} className="w-52 h-[276px] xl:w-[302px] xl:h-[401.33px] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden  shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-2000"/>
-          <img src={board2} className="w-52 h-[276px] xl:w-[302px] xl:h-[401.33px] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-4000"/>
-          <img src={keychain} className="w-52 h-[229.77px] xl:w-[302px] xl:h-[333.8px] xl:left-[-21dvw] self-center border-2 left-[-208px] bottom-0 z-30 absolute shadow-sm overflow-hidden shadow-gray-200 border-orange-300 rounded-md animate-infinite-scroll delay-6000"/>
-        </ImageCycle>
-
-        <div className='flex flex-row justify-center items-center px-12 max-md:mt-6'>
-          <div className='h-fit flex flex-col gap-4 justify-center items-center max-md:self-start'>
-            <h1 className='dark:text-white md:text-white opacity-80 w-[50dvw] max-md:w-[80dvw] text-center drop-shadow-lg rounded-lg p-4 border-2 border-zinc-800 dark:border-gray-400'>
-            Explore limitless creativity with services tailored to bring your 
-            wildest ideas to life. Specializing in a wide array of 3D solutions 
-            including CAD, 3D printing, CNC machining, laser engraving, and animation, 
-            Snapp Labs is well equipped to create anything you can imagine. If you 
-            are interested in seeing some of our work, check out the gallery of 
-            completed projects, linked below.</h1>
-            <Button href='/gallery'>
-              <h1>Gallery</h1>
-              <img className=" mx-2 w-4 transition duration-300 ease-in-out d-4 border-y-8 border-y-transparent border-l-[16px] 
-              border-l-orange-300" />
-            </Button>
-
-          </div>
-
+        <div className="relative flex overflow-hidden w-full max-xl:h-[300px] xl:h-[450px] lg:mb-12">
+          <img src={board1} loading='lazy' className="absolute w-52 h-[220px] xl:w-[302px] xl:h-[319px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm animate-infinite-scroll" alt="Cutting Board 1" />
+          <img src={iron1} loading='lazy' className="absolute w-52 h-[276px] xl:w-[302px] xl:h-[401px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm animate-infinite-scroll delay-2000" alt="Iron Suit 1" />
+          <img src={board2} loading='lazy' className="absolute w-52 h-[276px] xl:w-[302px] xl:h-[401px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm animate-infinite-scroll delay-4000" alt="Cutting Board 2" />
+          <img src={keychain} loading='lazy' className="absolute w-52 h-[230px] xl:w-[302px] xl:h-[334px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm animate-infinite-scroll delay-6000" alt="Keychain" />
         </div>
 
-      </div>  
-    </div>
-    
-  )
-}
+        <div className="flex flex-col items-center px-12 dark:w-[66dvw] max-md:mt-6">
+          <h1 className="text-center text-lg md:text-xl max-sm:bg-zinc-100 dark:bg-none font-semibold md:text-gray-200 text-zinc-900 dark:opacity-80 border-2 border-zinc-400 dark:border-gray-400 p-4 rounded-lg shadow-lg max-w-[80dvw]">
+            Explore limitless creativity with services tailored to bring your wildest ideas to life. Specializing in a wide array of 3D solutions including CAD, 3D printing, CNC machining, laser engraving, and animation, Snapp Labs is well-equipped to create anything you can imagine. If you are interested in seeing some of our work, check out the gallery of completed projects, linked below.
+          </h1>
+          <Button href="/gallery" className="mt-4 flex items-center">
+            <span>Gallery</span>
+            <img className="mx-2 w-4 h-4 border-l-[16px] border-l-amber-400 border-y-8 border-y-transparent transition duration-300 ease-in-out" alt="Arrow" />
+          </Button>
+        </div>
 
-export default projectLanding
+      </div>
+    </div>
+  );
+};
+
+export default ProjectLanding;

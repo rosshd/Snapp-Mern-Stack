@@ -31,7 +31,7 @@ export default function Form() {
       return (
         <div className="md:w-[50dvw] w-[75dvw] flex flex-col justify-center self-center rounded-lg">
           <form onSubmit={onSubmit} className='md:w-[50dvw] w-[75dvw] py-6 flex flex-col justify-center self-center gap-3 px-4 rounded-lg drop-shadow-lg
-          dark:to-zinc-800 dark:from-zinc-950 to-zinc-200 from-zinc-400 bg-gradient-to-br dark:bg-opacity-25 border-2 border-zinc-800'>
+          dark:to-zinc-800 dark:from-zinc-950 to-zinc-200 from-zinc-300 bg-gradient-to-br bg-opacity-25 border-2 border-zinc-800'>
             <input placeholder='Name' required='true' type="text" name="name" className='rounded-br-xl rounded-tl-md border-2 border-zinc-800 drop-shadow-lg dark:border-none dark:bg-zinc-700 dark:text-zinc-200 shadow-sm shadow-zinc-400'></input>
             <input placeholder='Email' required='true' type="email" name="email" className=' rounded-br-xl dark:bg-zinc-700 border-2 border-zinc-800 drop-shadow-lg dark:border-none dark:text-zinc-200 shadow-sm shadow-zinc-400'/>
             <textarea placeholder='Message/Request' required='true' name="message" className='md:min-h-[40vh] min-h-[50vh] border-2 border-zinc-800 drop-shadow-lg dark:border-none rounded-br-xl dark:bg-zinc-700 dark:text-zinc-200 shadow-sm shadow-zinc-400'></textarea>

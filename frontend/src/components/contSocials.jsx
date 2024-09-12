@@ -15,28 +15,28 @@ const contSocials = () => {
             
             <Link rel='path' to='../serviceInquiry'>
                 <button>
-                    <img src={mail} alt="Mail" className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out mx-2'/>
+                    <img src={mail} alt="Mail" loading='lazy' className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out mx-2'/>
                 </button>
             </Link>
             
             
             <Link to='https://www.youtube.com/@SnappLabs/videos'>
                 <button>
-                    <img src={youtube} alt="Youtube" className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out mx-2'/>
+                    <img src={youtube} alt="Youtube" loading='lazy' className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out mx-2'/>
                 </button>
             </Link>
 
             
             <Link to='https://www.instagram.com/snapplabs/'>
                 <button>
-                    <img src={instagram} alt="Instagram" className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out mx-2'/>
+                    <img src={instagram} alt="Instagram" loading='lazy' className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out mx-2'/>
                 </button>
             </Link>
             
             
             <Link to='https://www.facebook.com/SnappLabs3D/'>
                 <button>
-                    <img src={facebook} alt="facebook" className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out'/>
+                    <img src={facebook} alt="facebook" loading='lazy' className='w-16 h-16 hover:scale-110 transition-all duration-100 ease-out'/>
                 </button>
             </Link>
         </div>

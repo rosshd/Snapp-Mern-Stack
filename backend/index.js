@@ -7,6 +7,8 @@ import compression from 'compression';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+app.use(compression());
+
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -18,6 +20,9 @@ app.use(cors({
     origin: 'http://localhost:5173',
     optionsSuccessStatus: 200
 }));
+
+const compression = require('compression');
+const express = require('express');
 
 const uploadsPath = path.join(__dirname, 'uploads');
 app.use('/uploads', express.static(uploadsPath));

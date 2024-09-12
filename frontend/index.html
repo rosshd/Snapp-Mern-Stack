@@ -1,22 +1,19 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/theSnapp.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snapp Labs</title>
-    <link rel="preload" as="image" type="image/webp" href="./src/assets/snappSaber.webp">
-    <link rel="preload" as="image" type="image/webp" href="./src/assets/mainLogo.webp">
-  </head>
-  <body class="overflow-x-hidden scrollbar-thumb-orange-300 scrollbar-thumb-rounded-full dark:scrollbar-track-zinc-800 scrollbar-track-transparent overflow-y-hidden">
-    <picture class="hidden">
-      <img className="hidden" src="./src/assets/snappSaber.webp">
-      <img className='hidden' src="./src/assets/mainLogo.webp">
-    </picture>
-    <div id="root" class="overflow-x-hidden"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snapp Labs</title>
+  
+  <link rel="icon" type="image/png" href="/src/assets/theSnapp.png" />
+  
+  <link rel="preload" href="/src/assets/snappSaber.webp" as="image" type="image/webp"/>
+  <link rel="preload" href="/src/assets/mainLogo.webp" as="image" type="image/webp" />
+  
+</head>
+<body class="overflow-x-hidden">
+  <div id="root" class="overflow-x-hidden"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+</body>
 </html>
-
-
