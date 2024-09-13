@@ -31,7 +31,7 @@ const Heading = () => {
 
         <img
           src="../src/assets/snappSaber.webp"
-          className="w-[300px] h-[170px] xl:w-[600px] xl:h-[375px] md:justify-self-center mt-8 rounded-lg shadow-"
+          className="w-[300px] h-[170px] xl:w-[600px] xl:h-[375px] md:justify-self-center mt-8 rounded-md shadow-xl" 
           alt="3D Printing"
         />
     </div>
