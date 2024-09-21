@@ -6,7 +6,7 @@ import cors from 'cors';
 import compression from 'compression';
 import path from 'path';
 import { fileURLToPath } from 'url';
-
+require('dotenv').config();
 // Initialize the app
 const app = express();
 
