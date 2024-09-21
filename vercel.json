@@ -1,4 +1,8 @@
 {
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/" }
+    ],
+    
     "builds": [
       {
         "src": "frontend/package.json",
@@ -17,5 +21,7 @@
         "src": "/(.*)",
         "dest": "/"
       }
+      
     ]
+    
   }
