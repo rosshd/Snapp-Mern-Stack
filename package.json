@@ -5,8 +5,8 @@
     "sharp": "^0.33.4"
   },
   "scripts": {
-    "build": "npx concurrently \"npm run build --prefix frontend\" \"echo 'No build step for backend'\"",
-    "start": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\""
+    "build:frontend": "npm run build --prefix frontend",
+    "build:backend": "echo 'No build step for backend'",
+    "build": "npm run build:frontend && npm run build:backend"
   }
 }
