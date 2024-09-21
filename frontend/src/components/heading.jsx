@@ -5,7 +5,7 @@ import snappSaber from "../assets/snappSaber.webp";
 
 const Heading = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full items-center  bg-gradient-to-b pt-12 md:px-[10%] md:gap-[5%] from-white max-h-[90vh] to-zinc-100 dark:from-zinc-800 dark:to-zinc-900 md:h-[95vh] max-sm:h-[99vh] max-md:py-8 overflow-hidden">
+    <div className="flex flex-col md:flex-row w-full items-center sm:pt-[10%]  bg-gradient-to-b pt-12 md:px-[10%] md:gap-[5%] from-white max-h-[90vh] to-zinc-100 dark:from-zinc-800 dark:to-zinc-900 md:h-[95vh] max-sm:h-[99vh] max-md:py-8 overflow-hidden">
         
         <div className="flex flex-col items-center max-sm:scale-90 w-full md:w-[50%] rounded-xl drop-shadow-lg dark:bg-transparent">
           <img
