@@ -2,8 +2,8 @@ import React from 'react';
 
 const GalPannel = ({ files = [], className }) => {
     console.log('Images Prop:', files);
-
-    const filePath = 'http://localhost:3000/uploads/';
+    console.log(import.meta.env);
+    const filePath = `${import.meta.env.VITE_BACKEND_URL}/uploads/`;
     
 
     const renderFiles = () => {

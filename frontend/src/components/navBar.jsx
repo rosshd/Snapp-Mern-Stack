@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const NavBar = ({ className }) => {
   const [isActive, setIsActive] = useState(false);
-  const navRef = useRef(null); // Ref to the nav bar
+  const navRef = useRef(null);
 
   const showItems = () => {
     setIsActive(true);
@@ -15,7 +15,6 @@ const NavBar = ({ className }) => {
     setIsActive(false);
   };
 
-  // Effect to handle clicks outside the nav bar
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
@@ -28,12 +27,12 @@ const NavBar = ({ className }) => {
   }, []);
 
   return (
-    <div className={`dark:bg-transparent bg-zinc-950 bg-opacity-80 dark:bg-opacity-90 top-2 max-sm:left-3 max-sm:top-3 left-2 w-20 rounded-full h-20 max-sm:h-14 max-sm:w-14 fixed flex flex-col items-center z-50 border-orange-300 border-2 ${className}`}>
+    <div className={`dark:bg-transparent bg-zinc-950 bg-opacity-80 dark:bg-opacity-90 top-2 left-2 w-20 rounded-full h-20 fixed flex flex-col items-center z-50 border-orange-300 border-2 ${className}`}>
       
-      <div className='hidden sm:block'>
+      <div className='hidden md:block'>
         <Link className='fixed top-0 left-0 p-4' to='/'>
           <button>
-            <img src={logoIcon} className='h-16 max-sm:w-12 max-sm:h-12 transition-all bg-opacity-80 duration-200 rounded-full hover:bg-opacity-100 hover:translate-y-[-2%] hover:scale-105' alt="home"/>
+            <img src={logoIcon} className='h-16 transition-all bg-opacity-80 duration-200 rounded-full hover:bg-opacity-100 hover:translate-y-[-2%] hover:scale-105' alt="home"/>
           </button>
         </Link>
         <div className='flex-row items-center m-4 h-auto fixed top-0 left-28 bg-opacity-75 bg-zinc-950 rounded-2xl z-40 border-orange-300 border-2 scale-110'>
@@ -44,14 +43,14 @@ const NavBar = ({ className }) => {
         </div>
       </div>
 
-      <button className='sm:hidden fixed top-0 left-0 p-4 hover:scale-105' onClick={isActive ? closeItems : showItems}>
-        <img src={logoIcon} className='h-16 max-sm:w-12 max-sm:h-12 transition-all bg-opacity-80 duration-200 rounded-full hover:bg-opacity-100 hover:translate-y-[-2%]' alt="home"/>
+      <button className='md:hidden fixed top-0 left-0 p-4 hover:scale-105' onClick={isActive ? closeItems : showItems}>
+        <img src={logoIcon} className='h-16 transition-all bg-opacity-80 duration-200 rounded-full hover:bg-opacity-100 hover:translate-y-[-2%]' alt="home"/>
       </button>
       
       {isActive && 
         <div 
-          ref={navRef} // Attach ref to the nav bar
-          className='sm:hidden flex flex-col items-center fixed top-16 left-2 bg-opacity-75 bg-zinc-950 rounded-2xl z-40 border-orange-300 border-2'
+          ref={navRef} 
+          className='md:hidden flex flex-col items-center fixed top-16 left-2 bg-opacity-75 bg-zinc-950 rounded-2xl z-40 border-orange-300 border-2'
         >
           <NavBarSection href='../'>Home</NavBarSection>
           <NavBarSection href='../gallery'>Gallery</NavBarSection>
