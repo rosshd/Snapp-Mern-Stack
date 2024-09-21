@@ -44,20 +44,20 @@ https://www.instructables.com/3D-Printed-Iron-Man-Suit/`
   {
     key: 'Medicine',
     src: healthcare,
-    title: '3D Printed Drone Parts for Camp',
-    info: `    On an urgent time crunch after realizing the drone motors purchased for a summer camp were too small for the drone chassis, the Georgia Tech STEP Camp reached out to Snapp Labs for an overnight order of 60 adapters to fit around the motors and make them fit in the drone’s frame. Everything was completed on time, and the future engineers were able to build their delivery drones without timeline issues.`
+    title: 'Earsavers',
+    info: `    In order to contribute to the wellbeing of nurses, Snapp Labs donated several hundred earsavers to local hospitals. The earsavers relieve the stress from masks on nurses' ears by allowing the mask straps to go around plastic tabs which can be placed on the back of the head. This simple design largely improves the comfort of the masks during long workdays, allowing the nurses to feel and perform better at work.`
   },
   {
     key: 'Tools',
     src: tools,
-    title: '3D Printed Drone Parts for Camp',
-    info: `    On an urgent time crunch after realizing the drone motors purchased for a summer camp were too small for the drone chassis, the Georgia Tech STEP Camp reached out to Snapp Labs for an overnight order of 60 adapters to fit around the motors and make them fit in the drone’s frame. Everything was completed on time, and the future engineers were able to build their delivery drones without timeline issues.`
+    title: 'General Workflow Improvement',
+    info: `    With the ability to create custom parts for cheap, Snapp Labs has created several tools to improve client workflows. From golf ball markers to silicone molds for hat patches to architectural tools, any kind of custom tool can be quickly prototyped and integrated into a user's workflow.`
   },
   {
     key: 'Manufacturing',
     src: manufacturing,
-    title: '3D Printed Drone Parts for Camp',
-    info: `    On an urgent time crunch after realizing the drone motors purchased for a summer camp were too small for the drone chassis, the Georgia Tech STEP Camp reached out to Snapp Labs for an overnight order of 60 adapters to fit around the motors and make them fit in the drone’s frame. Everything was completed on time, and the future engineers were able to build their delivery drones without timeline issues.`
+    title: 'Manufacturing',
+    info: `    With an army of 3d printers, a lightning fast laser engraver, and 4 axis CNC machine, Snapp Labs is ready for all of your manufacturing needs. Snapp Labs has done small scale mass manufacturing orders for several clients, creating parts for reptile vents, board game terrain, and Glance's LED Tickers. With manufacturing abilities in various spaces, it is possible to complete nearly any small scale maufacturing request of several hundred units a week or even day, depending on the part size.`
   },
 
 ];
