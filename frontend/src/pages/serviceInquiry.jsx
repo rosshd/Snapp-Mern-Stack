@@ -6,7 +6,7 @@ import inquiryPNG from "../assets/inquiry.webp"
 
 const shop = () => {
   return (
-    <div className='flex flex-col justify-center items-center h-screen overflow-visible bg-zinc-200 dark:bg-zinc-900'>
+    <div className='flex flex-col justify-center items-center max-h-screen overflow-visible bg-zinc-200 dark:bg-zinc-900'>
       <NavBar className=' bg-zinc-900'></NavBar>
       <div className='flex flex-row justify-center items-center h-[10%] space-x-2 mb-4 max-sm:mb-2 relative'>
         <img src={inquiryPNG} className='h-[100%] hidden dark:block opacity-90 dark:bg-none rounded-md px-2 border-b-orange-400 border-b-2' />
