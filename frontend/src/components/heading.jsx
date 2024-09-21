@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './theButton';
+import snappbanner from "../src/assets/mainLogo.webp";
 
 const Heading = () => {
   return (
@@ -7,7 +8,7 @@ const Heading = () => {
         
         <div className="flex flex-col items-center max-sm:scale-90 w-full md:w-[50%] rounded-xl drop-shadow-lg dark:bg-transparent">
           <img
-            src="../src/assets/mainLogo.webp"
+            src={snappbanner}
             className="w-[375px] max-h-[74.45px] lg:min-w-[400px] xl:min-w-[600px] xl:max-h-[120px] max-md:my-6 rounded-xl"
             alt="Snapp Labs"
           />
