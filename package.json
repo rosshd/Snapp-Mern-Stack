@@ -6,7 +6,7 @@
   },
   "scripts": {
     "build:frontend": "npm run build --prefix frontend",
-    "build:backend": "echo 'No build step for backend'",
+    "build:backend": "node index.js --prefix backend'",
     "build": "npm run build:frontend && npm run build:backend"
   }
 }
