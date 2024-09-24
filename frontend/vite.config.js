@@ -6,5 +6,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-  base: process.env.NODE_ENV === 'production' ? '/your-subpath/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/' : '/',
 });
