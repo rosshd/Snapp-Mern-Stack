@@ -4,6 +4,12 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+const corsOptions = {
+    origin: 'https://vercel.com/rosshds-projects/snapp-mern-stack',
+    optionsSuccessStatus: 200
+  };
+  app.use(cors(corsOptions));
+
 // Database connection
 mongoose.connect(mongoDBURL)
     .then(() => {
