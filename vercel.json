@@ -1,0 +1,14 @@
+{
+    "build": {
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "timeout": 600
+    },
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/backend/$1"
+      }
+    ]
+  }
