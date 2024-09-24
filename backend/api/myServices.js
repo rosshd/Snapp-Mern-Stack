@@ -9,6 +9,6 @@ export default async function handler(req, res) {
         const services = await db.collection('services').find({}).toArray();
         res.status(200).json(services);
     } else {
-        res.status(405).json({ message: 'Method not allowed' });
+        res.status(405).json({ message: 'The Method not allowed' });
     }
 }
