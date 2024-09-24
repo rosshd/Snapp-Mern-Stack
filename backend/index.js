@@ -9,7 +9,7 @@ const app = express();
 dotenv.config();
 
 const corsOptions = {
-    origin: 'https://vercel.com/rosshds-projects/snapp-mern-stack',
+    origin: 'https://vercel.com/rosshds-projects/snapp-mern-stack/7SQjrYvgekmVJteqW7A4R2ngPorR',
     optionsSuccessStatus: 200
   };
   app.use(cors(corsOptions));
