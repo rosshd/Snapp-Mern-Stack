@@ -3,7 +3,7 @@ import React from 'react';
 const GalPannel = ({ files = [], className }) => {
     console.log('Images Prop:', files);
     console.log(import.meta.env);
-    const filePath = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+    const filePath = import.meta.env.VITE_BACKEND_URL || 'https://snapp-mern-stack-qmflx2y8r-rosshds-projects.vercel.app/api';
     
 
     const renderFiles = () => {

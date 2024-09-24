@@ -1,27 +1,28 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "/frontend/dist/index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "/backend/index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "backend/index.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "frontend/dist/index.html"
-      }
-    ],
+  "builds": [
+    {
+      "src": "frontend/dist/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "backend/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/dist/index.html"
+    }
+  ],
     "env": {
       "MONGODB_CONNECT_URI":"mongodb+srv://stewytie:hawk9993@cluster0.g8pm7uj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-      "PORT":"3000"
+      "PORT":"3000",
+      "VITE_BACKEND_URL=https":"//snapp-mern-stack-qmflx2y8r-rosshds-projects.vercel.app/api"
     }
   }

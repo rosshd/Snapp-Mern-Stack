@@ -12,7 +12,7 @@ const ServicePage = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:3000/myServices')
+    axios.get('https://snapp-mern-stack-qmflx2y8r-rosshds-projects.vercel.app/api/myServices')
       .then((response) => {
         setServices(response.data.data);
         setLoading(false);
