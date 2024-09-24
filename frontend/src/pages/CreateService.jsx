@@ -41,7 +41,7 @@ const CreateService = () => {
       setLoading(false);
     } catch (error) {
       setLoading(false);
-      console.error('Error deleting data:', error);
+      console.error('Errors deleting data:', error);
     } finally {
       navigate('/gallery');
     }
