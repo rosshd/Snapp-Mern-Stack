@@ -3,6 +3,7 @@ import Button from './theButton';
 import mainLogo from "../assets/mainLogo.webp";
 import snappSaber from "../assets/snappSaber.webp";
 
+
 const Heading = () => {
   return (
     <div className="flex flex-col md:flex-row w-full items-center max-sm:max-h-[95vh] max-sm:items-center max-sm:justify-center  bg-gradient-to-b md:pt-12 md:px-[10%] md:gap-[5%] from-white max-h-[90vh] to-zinc-100 dark:from-zinc-800 dark:to-zinc-900 md:h-[95vh] max-sm:h-[99vh] max-md:py-8 overflow-hidden">
