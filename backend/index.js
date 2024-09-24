@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import { mongoDBURL } from "./config.js";
+import { PORT, mongoDBURL } from './config.js';
+import { MongoClient, ServerApiVersion } from "mongodb";
 import dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
@@ -15,20 +15,34 @@ const corsOptions = {
   app.use(cors(corsOptions));
 
 // Database connection
-mongoose.connect(mongoDBURL)
-    .then(() => {
-        console.log('App is connected to MongoDB');
-    })
-    .catch((error) => {
-        console.error('Error connecting to MongoDB:', error);
-        process.exit(1);
-    });
+const client = new MongoClient(mongoDBURL, {
+    serverApi: {
+      version: ServerApiVersion.v1,
+      strict: true,
+      deprecationErrors: true,
+    },
+  });
 
-// Serverless function example
-export default async function handler(req, res) {
-    if (req.method === 'GET') {
-        res.status(200).json({ message: 'Hello, World!' });
-    } else {
-        res.status(405).json({ message: 'Method not allowed' });
+const run = async () => {
+    try{
+        await client.connect();
+
+        await client.db("admin").command({ ping: 1 });
+        console.log(
+        "Pinged your deployment. You successfully connected to MongoDB!"
+        );
+    }
+    finally{
+
     }
 }
+
+run().catch(error => console.log)
+
+app.get('/',(req,res)=>{
+    res.send('Car Junction Backend Server Running...')
+})
+
+app.listen(PORT,()=>{
+    console.log(console.log(`Server is running on port ${PORT}`))
+})
