@@ -1,18 +1,11 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/uploads/(.*)",
-      "dest": "/frontend/src/assets/uploads/$1"
-    }
-  ]
+  "dependencies": {
+    "compression": "^1.7.4",
+    "heapdump": "^0.3.15",
+    "sharp": "^0.33.4"
+  },
+  "scripts": {
+    "build:frontend": "npm run build --prefix frontend",
+    "build": "npm run build:frontend"
+  }
 }
