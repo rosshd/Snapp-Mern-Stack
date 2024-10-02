@@ -1,11 +1,9 @@
 import React, { Suspense, lazy } from 'react';
 import Heading from '../components/heading';
-
-// Lazy load components
-const NavBar = lazy(() => import('../components/navBar'));
+import NavBar from '../components/navBar';
 const Projects = lazy(() => import('../components/projectLanding'));
 const Uses = lazy(() => import('../components/uses'));
-const ContSoci = lazy(() => import('../components/contSocials'));
+import ContSoci from '../components/contSocials';
 
 const Home = () => {
   return (

@@ -12,7 +12,7 @@ const ServicePage = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:3000/myServices')
+    axios.get('https://snapp-mern-stack-qmflx2y8r-rosshds-projects.vercel.app/api/myServices')
       .then((response) => {
         setServices(response.data.data);
         setLoading(false);
@@ -27,7 +27,7 @@ const ServicePage = () => {
     const isLeftDiv = index % 2 === 0;
     return (
       <div key={service._id} className=' flex flex-col flex-wrap w-screen justify-center mb-[10vh] max-lg:items-center'>
-        <div className={`flex flex-row max-lg:flex-col max-lg:p-12 justify-start items-center px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-900 max-lg:bg-opacity-95 border-orange-300 lg:max-h-[60vh] max-w-[60dvw] max-lg:max-w-[75dvw] border-y-8 ${isLeftDiv ? 'lg:self-start xl:ml-[10dvw]' : 'lg:self-end xl:mr-[10dvw]'}`}>
+        <div className={`flex flex-row max-lg:flex-col max-lg:p-12 justify-start items-center px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-900 max-lg:bg-opacity-95 border-orange-300 lg:max-h-[65vh] xl:max-h-[60vh] max-w-[60dvw] max-lg:max-w-[75dvw] border-y-8 ${isLeftDiv ? 'lg:self-start xl:ml-[10dvw]' : 'lg:self-end xl:mr-[10dvw]'}`}>
           <div className='h-full flex max-lg:max-w-[100%] max-w-[40%]'>
             <GalPannel files={service.File} />
           </div>
@@ -48,7 +48,7 @@ const ServicePage = () => {
   };
 
   return (
-    <div className='w-screen dark:from-zinc-950 dark:to-zinc-900 bg-gradient-to-br h-screen from-zinc-100 to-zinc-400 pt-16 mb-12 items-center justify-center overflow-x-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-orange-300 scrollbar-thumb-rounded-full dark:scrollbar-track-zinc-800 scrollbar-track-transparent'>
+    <div className='w-screen dark:from-zinc-950 dark:to-zinc-900 bg-gradient-to-br h-screen from-zinc-100 to-zinc-400 pt-16 items-center justify-center overflow-x-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-orange-300 scrollbar-thumb-rounded-full dark:scrollbar-track-zinc-800 scrollbar-track-transparent'>
       <Navbar />
       <h1 className='text-center font-rancho text-9xl text-black rounded-2xl mb-[15vh] mt-4 dark:text-white'>Gallery</h1>
       {loading ? (

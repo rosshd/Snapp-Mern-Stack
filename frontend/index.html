@@ -6,14 +6,24 @@
   <title>Snapp Labs</title>
   
   <link rel="icon" type="image/png" href="/src/assets/theSnapp.png" />
-  
-  <link rel="preload" href="/src/assets/snappSaber.webp" as="image" type="image/webp"/>
-  <link rel="preload" href="/src/assets/mainLogo.webp" as="image" type="image/webp" />
-  
 </head>
 <body class="overflow-x-hidden">
   <div id="root" class="overflow-x-hidden"></div>
   <script type="module" src="/src/main.jsx"></script>
 
+  <noscript>
+    <style>
+      #root {
+        display: none;
+      }
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+    </style>
+    <div>
+      <p>JavaScript is required to view this application.</p>
+    </div>
+  </noscript>
 </body>
 </html>
