@@ -1,8 +1,8 @@
 import React from 'react'
-import mail from '../assets/mail.webp'
-import youtube from '../assets/youtube-64.webp'
-import instagram from '../assets/instagram-64.webp'
-import facebook from '../assets/facebook-64.webp'
+import mail from '../../public/assets/mail.webp'
+import youtube from '../../public/assets/youtube-64.webp'
+import instagram from '../../public/assets/instagram-64.webp'
+import facebook from '../../public/assets/facebook-64.webp'
 import {Link, Route} from 'react-router-dom'
 
 const contSocials = () => {

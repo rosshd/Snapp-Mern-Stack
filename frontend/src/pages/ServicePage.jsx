@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Spinner from '../assets/Spinner.jsx';
+import Spinner from '../../public/assets/Spinner.jsx';
 import Navbar from '../components/navBar.jsx';
 import Button from '../components/theButton.jsx';
 import GalPannel from '../components/galleryImgPannel.jsx';
 import ContSo from '../components/contSocials.jsx';
-import servicesData from '../assets/services.json'; 
+import servicesData from '../../public/assets/services.json'; 
 
 const ServicePage = () => {
   const [services, setServices] = useState([]);

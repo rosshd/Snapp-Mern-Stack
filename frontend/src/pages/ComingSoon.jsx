@@ -1,5 +1,5 @@
 import React from 'react'
-import theSnapp from '../assets/theSnapp.webp'
+import theSnapp from '../../public/assets/theSnapp.webp'
 import Navbar from '../components/navBar'
 
 const ComingSoon = () => {

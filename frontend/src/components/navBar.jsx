@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import logoIcon from '../assets/logoIcon.webp';
+import logoIcon from '../../public/assets/logoIcon.webp';
 import NavBarSection from './NavBarSection';
 import { Link } from 'react-router-dom';
 

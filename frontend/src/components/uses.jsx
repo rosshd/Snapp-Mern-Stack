@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import art from '../assets/icons/art.webp';
-import education from '../assets/icons/education.webp';
-import goods from '../assets/icons/goods.webp';
-import healthcare from '../assets/icons/healthcare.webp';
-import theatre from '../assets/icons/theatre.webp';
-import tools from '../assets/icons/tools.webp';
-import manufacturing from '../assets/icons/manufacturing.webp';
-import plane from '../assets/icons/plane.webp';
-import UsesBox from '../assets/UsesBox';
+import art from '../../public/assets/icons/art.webp';
+import education from '../../public/assets/icons/education.webp';
+import goods from '../../public/assets/icons/goods.webp';
+import healthcare from '../../public/assets/icons/healthcare.webp';
+import theatre from '../../public/assets/icons/theatre.webp';
+import tools from '../../public/assets/icons/tools.webp';
+import manufacturing from '../../public/assets/icons/manufacturing.webp';
+import plane from '../../public/assets/icons/plane.webp';
+import UsesBox from '../../public/assets/UsesBox';
 
 const usesData = [
   {

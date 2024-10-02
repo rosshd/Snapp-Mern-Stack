@@ -1,7 +1,7 @@
 import React from 'react'
-import Printer from '../assets/image0.jpeg'
+import Printer from '../../public/assets/image0.jpeg'
 import ContSoci from '../components/contSocials'
-import mainLogo from '../assets/mainLogo.webp'
+import mainLogo from '../../public/assets/mainLogo.webp'
 import NavBar from '../components/navBar'
 
 const aboutUs = () => {

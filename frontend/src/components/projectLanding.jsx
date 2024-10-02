@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from './theButton';
-import board1 from '../assets/products/cuttingBoards.webp';
-import board2 from '../assets/products/board2.webp';
-import iron1 from '../assets/products/ironSuit1.webp';
-import keychain from '../assets/products/keychain1.webp';
+import board1 from '../../public/assets/products/cuttingBoards.webp';
+import board2 from '../../public/assets/products/board2.webp';
+import iron1 from '../../public/assets/products/ironSuit1.webp';
+import keychain from '../../public/assets/products/keychain1.webp';
 
 const ProjectLanding = () => {
   return (

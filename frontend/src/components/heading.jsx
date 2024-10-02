@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './theButton';
-import mainLogo from "../assets/mainLogo.webp";
-import snappSaber from "../assets/snappSaber.webp";
+import mainLogo from "../../public/assets/mainLogo.webp";
+import snappSaber from "../../public/assets/snappSaber.webp";
 
 
 const Heading = () => {
