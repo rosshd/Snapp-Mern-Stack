@@ -1,7 +1,6 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
 import Home from './pages/home'
-import CreateService from './pages/CreateService'
 import Quote from './pages/serviceInquiry'
 import About from './pages/about'
 import ServicePage from './pages/ServicePage'
@@ -13,7 +12,6 @@ const App = () => {
   return (
     <Routes>
       <Route exact path='/' element={<Home />}/>
-      <Route path='/myServices/create' element={<CreateService />} />
       <Route path='/serviceInquiry' element={<Quote />} />
       <Route path='/about' element={<About />} />
       <Route path='/gallery' element={<ServicePage />} />
