@@ -4,10 +4,6 @@
     {
       "src": "frontend/index.html",
       "use": "@vercel/static"
-    },
-    {
-      "src": "backend/index.js",
-      "use": "@vercel/node"
     }
   ],
   "routes": [,
