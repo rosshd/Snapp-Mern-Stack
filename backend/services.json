@@ -1,10 +1,10 @@
 [
     {
       "id": 1,
-      "title": "Iron Man Zombie Helmet",
-      "description": "Using models from @piercepopculturedesigns on instagram, this piece was a custom creation.",
-      "link": "",
-      "files": [
+      "Title": "Iron Man Zombie Helmet",
+      "Description": "Using models from @piercepopculturedesigns on instagram, this piece was a custom creation.",
+      "Link": "",
+      "Files": [
         "IronZombie.jpg",
         "IronZombie-1.jpg",
         "IronZombie-3.jpg"
@@ -12,19 +12,19 @@
     },
     {
       "id": 2,
-      "title": "Iron Man Suit",
-      "description": "This full upper body suit complete with lights and motorization was a custom project.",
-      "link": "https://www.instructables.com/3D-Printed-Iron-Man-Suit/",
-      "files": [
+      "Title": "Iron Man Suit",
+      "Description": "This full upper body suit complete with lights and motorization was a custom project.",
+      "Link": "https://www.instructables.com/3D-Printed-Iron-Man-Suit/",
+      "Files": [
         "image1 (4).jpeg"
       ]
     },
     {
       "id": 3,
-      "title": "Dog Paw Pendant",
-      "description": "This pendant was created as a tribute to a lost dog, Sixten. Using a 3D printer, this memorial was made.",
-      "link": "",
-      "files": [
+      "Title": "Dog Paw Pendant",
+      "Description": "This pendant was created as a tribute to a lost dog, Sixten. Using a 3D printer, this memorial was made.",
+      "Link": "",
+      "Files": [
         "Dog Paw scaled.jpg",
         "Dog Paw-2 scaled.jpg",
         "Dog Paw-3 scaled.jpg"
@@ -32,10 +32,10 @@
     },
     {
       "id": 4,
-      "title": "Anakin’s Reforged Lightsaber",
-      "description": "This project was created entirely from scratch and modeled around electronics for light and sound effects.",
-      "link": "https://www.youtube.com/watch?v=ANBILfw8FJE",
-      "files": [
+      "Title": "Anakin’s Reforged Lightsaber",
+      "Description": "This project was created entirely from scratch and modeled around electronics for light and sound effects.",
+      "Link": "https://www.youtube.com/watch?v=ANBILfw8FJE",
+      "Files": [
         "Lightsaber-2.jpg",
         "Lightsaber-3.jpg",
         "Lightsaber-4.jpg"
@@ -43,10 +43,10 @@
     },
     {
       "id": 5,
-      "title": "Sweden Gift Bundle",
-      "description": "Using a laser engraver, we are able to create a premium feel to your personalized gifts.",
-      "link": "",
-      "files": [
+      "Title": "Sweden Gift Bundle",
+      "Description": "Using a laser engraver, we are able to create a premium feel to your personalized gifts.",
+      "Link": "",
+      "Files": [
         "IMG_0381.jpeg",
         "image1 (6).jpeg",
         "image4 (2).jpeg"

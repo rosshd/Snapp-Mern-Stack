@@ -31,14 +31,6 @@ const Heading = () => {
             </Button>
           </div>
         </div>
-<<<<<<< HEAD
-
-        <img
-          src="../src/assets/snappSaber.webp"
-          className="w-[300px] h-[170px] xl:w-[600px] xl:h-[375px] md:justify-self-center mt-8 rounded-md shadow-xl" 
-          alt="3D Printing"
-        />
-=======
         <div className='flex flex-col items-center max-sm:scale-90 w-full md:w-[50%] rounded-xl drop-shadow-lg dark:bg-transparent'>
           <img
             src={snappSaber}
@@ -47,7 +39,6 @@ const Heading = () => {
           />
         </div>
         
->>>>>>> 0d7f2d74d3b4b297c8567526270dba3f1a2c54e7
     </div>
   );
 };
