@@ -7,7 +7,7 @@ import theatre from '../../public/assets/icons/theatre.webp';
 import tools from '../../public/assets/icons/tools.webp';
 import manufacturing from '../../public/assets/icons/manufacturing.webp';
 import plane from '../../public/assets/icons/plane.webp';
-import UsesBox from '../../public/assets/UsesBox';
+import UsesBox from './UsesBox';
 
 const usesData = [
   {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Spinner from '../../public/assets/Spinner.jsx';
+import Spinner from '../components/Spinner.jsx';
 import Navbar from '../components/navBar.jsx';
 import Button from '../components/theButton.jsx';
 import GalPannel from '../components/galleryImgPannel.jsx';
