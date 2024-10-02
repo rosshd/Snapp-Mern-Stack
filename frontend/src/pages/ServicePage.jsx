@@ -4,7 +4,7 @@ import Navbar from '../components/navBar.jsx';
 import Button from '../components/theButton.jsx';
 import GalPannel from '../components/galleryImgPannel.jsx';
 import ContSo from '../components/contSocials.jsx';
-import servicesData from '../../../backend/services.json'; 
+import servicesData from '../assets/services.json'; 
 
 const ServicePage = () => {
   const [services, setServices] = useState([]);
