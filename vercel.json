@@ -6,7 +6,7 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [,
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "frontend/index.html"
