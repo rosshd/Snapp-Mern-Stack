@@ -1,11 +1,6 @@
 {
-  "dependencies": {
-    "compression": "^1.7.4",
-    "heapdump": "^0.3.15",
-    "sharp": "^0.33.4"
-  },
   "scripts": {
-    "build:frontend": "npm run build --prefix frontend",
-    "build": "npm run build:frontend"
+    "build": "npm run build:frontend",
+    "build:frontend": "npm run build --prefix frontend"
   }
 }
