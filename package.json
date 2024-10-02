@@ -6,7 +6,6 @@
   },
   "scripts": {
     "build:frontend": "npm run build --prefix frontend",
-    "build:backend": "cd backend && node index.js",
-    "build": "npm run build:frontend && npm run build:backend"
+    "build": "npm run build:frontend"
   }
 }
