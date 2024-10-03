@@ -21,7 +21,7 @@ const ServicePage = () => {
     const isLeftDiv = index % 2 === 0;
     return (
       <div key={index} className='flex flex-col flex-wrap w-screen justify-center mb-[10vh] max-lg:items-center'>
-        <div className={`flex flex-row max-lg:flex-col max-lg:p-12 justify-start items-center px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-900 max-lg:bg-opacity-95 border-orange-300 lg:max-h-[65vh] xl:max-h-[60vh] max-w-[80dvw] max-lg:max-w-[75dvw] border-y-8 ${isLeftDiv ? 'lg:self-start lg:ml-[8dvw]' : 'lg:self-end lg:mr-[8dvw]'}`}>
+        <div className={`flex flex-row max-lg:flex-col max-lg:p-2 justify-start items-center px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-900 max-lg:bg-opacity-95 border-orange-300 lg:max-h-[65vh] xl:max-h-[60vh] max-w-[80dvw] max-lg:max-w-[85dvw] border-y-8 ${isLeftDiv ? 'lg:self-start lg:ml-[8dvw]' : 'lg:self-end lg:mr-[8dvw]'}`}>
           <div className='h-full flex w-fit'>
             <GalPannel files={service.Files} />
           </div>
