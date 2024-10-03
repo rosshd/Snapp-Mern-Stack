@@ -39,7 +39,7 @@ const GalPannel = ({ files = [], className }) => {
         if (files.length > 2) {
             console.log('Rendering more than two files:', files.map((file, index) => `${filePath}${file}`));
             return (
-                <div className='flex flex-col justify-center items-center overflow-hidden space-y-2 mr-2 gap-[2%]'>
+                <div className='flex flex-col max-md:flex-wrap justify-center items-center overflow-hidden space-y-2 mr-2 gap-[2%]'>
                     <img key='0' src={`${filePath}${files[0]}`} alt={`File 1`}
                         className='h-[26vh] max-w-[100%] object-cover rounded-md'
                     />
