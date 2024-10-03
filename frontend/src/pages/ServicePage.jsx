@@ -26,7 +26,7 @@ const ServicePage = () => {
             <GalPannel files={service.Files} />
           </div>
           <div className='h-full max-lg:w-[100%] lg:max-w-[30dvw] rounded-lg py-4 px-4 flex flex-col overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-transparent'>
-            <h1 className='text-white text-start text-2xl mb-4 font-bold'>{service.Title}</h1>
+            <h1 className='text-white text-start text-2xl mb-4 font-bold max-md:text-center'>{service.Title}</h1>
             <h1 className='text-white text-opacity-50 text-xs text-start indent-4 mb-4'>{service.Description}</h1>
             {service.Link ? (
               <Button href={service.Link} className='h-12'>
