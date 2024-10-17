@@ -8,13 +8,35 @@ import keychain from '../../public/assets/products/keychain1.webp';
 const ProjectLanding = () => {
   return (
     <div className="flex flex-col items-center mb-[5vh] justify-center bg-gradient-to-b from-zinc-100 to-zinc-300 dark:to-zinc-900 dark:from-zinc-900">
-      <div className="flex flex-col items-center w-[66dvw] dark:w-full max-md:w-screen py-[5vh] rounded-2xl dark:bg-inherit dark:border-none md:border-x-8 border-amber-400 md:bg-zinc-900 overflow-hidden">
+      <div className="flex flex-col items-center w-[66dvw] dark:w-full max-md:w-screen md:py-[5vh] rounded-2xl dark:bg-inherit dark:border-none md:border-x-8 border-amber-400 md:bg-zinc-900 overflow-hidden">
 
-        <div className="relative flex overflow-hidden w-full max-xl:h-[300px] xl:h-[450px] lg:mb-12">
-          <img src={board1} loading='lazy' className="absolute w-52 h-[220px] xl:w-[302px] xl:h-[319px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm animate-infinite-scroll" alt="Cutting Board 1" />
-          <img src={iron1} loading='lazy' className="absolute w-52 h-[276px] xl:w-[302px] xl:h-[401px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm animate-infinite-scroll delay-2000" alt="Iron Suit 1" />
-          <img src={board2} loading='lazy' className="absolute w-52 h-[276px] xl:w-[302px] xl:h-[401px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm animate-infinite-scroll delay-4000" alt="Cutting Board 2" />
-          <img src={keychain} loading='lazy' className="absolute w-52 h-[230px] xl:w-[302px] xl:h-[334px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm animate-infinite-scroll delay-6000" alt="Keychain" />
+        {/* Conditionally layout the images */}
+        <div className="md:relative flex max-md:grid max-md:grid-cols-2 max-md:scale-50 max-md:gap-4 md:flex-row md:overflow-hidden max-md:h-[400px] w-full max-xl:h-[300px] xl:h-[450px] lg:mb-12">
+          {/* Images with responsive static layout for smaller screens */}
+          <img
+            src={board1}
+            loading="lazy"
+            className="md:absolute max-md:static w-52 h-[220px] xl:w-[302px] xl:h-[319px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm md:animate-infinite-scroll"
+            alt="Cutting Board 1"
+          />
+          <img
+            src={iron1}
+            loading="lazy"
+            className="md:absolute max-md:static w-52 h-[276px] xl:w-[302px] xl:h-[401px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm md:animate-infinite-scroll md:delay-2000"
+            alt="Iron Suit 1"
+          />
+          <img
+            src={board2}
+            loading="lazy"
+            className="md:absolute max-md:static w-52 h-[276px] xl:w-[302px] xl:h-[401px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm md:animate-infinite-scroll md:delay-4000"
+            alt="Cutting Board 2"
+          />
+          <img
+            src={keychain}
+            loading="lazy"
+            className="md:absolute max-md:static w-52 h-[230px] xl:w-[302px] xl:h-[334px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm md:animate-infinite-scroll md:delay-6000"
+            alt="Keychain"
+          />
         </div>
 
         <div className="flex flex-col items-center px-12 dark:w-[66dvw] max-md:mt-6">
