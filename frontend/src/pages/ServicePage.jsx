@@ -42,7 +42,7 @@ const ServicePage = () => {
   };
 
   return (
-    <div className='w-screen dark:from-zinc-800 dark:to-zinc-950 bg-gradient-to-br h-screen from-zinc-100 to-zinc-400 pt-16 items-center justify-center'>
+    <div className='w-screen dark:from-zinc-800 dark:to-zinc-900 bg-gradient-to-b h-auto from-zinc-100 to-zinc-400 pt-16 items-center justify-center'>
       <Navbar />
       <h1 className='text-center text-9xl text-black rounded-2xl mb-[15vh] mt-4 dark:text-white'>Gallery</h1>
       {loading ? (
