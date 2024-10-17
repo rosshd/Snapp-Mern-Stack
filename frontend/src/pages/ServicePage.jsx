@@ -29,7 +29,7 @@ const ServicePage = () => {
             <h1 className='text-white text-start text-2xl mb-4 font-bold max-md:text-center'>{service.Title}</h1>
             <h1 className='text-white text-opacity-50 text-xs text-start indent-4 mb-4'>{service.Description}</h1>
             {service.Link ? (
-              <Button href={service.Link} className='h-12 max-md:self-center max-md:justify-self-center overflow-y-scroll'>
+              <Button href={service.Link} className='h-auto py-4 self-center justify-self-center overflow-y-scroll'>
                 <h1 className='text-xs opacity-85'>See here</h1>
               </Button>
             ) : (
