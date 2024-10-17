@@ -7,7 +7,7 @@ import ContSoci from '../components/contSocials';
 
 const Home = () => {
   return (
-    <div className='scrollbar-thin scroll scrollbar-thumb-amber-400 h-screen overflow-x-hidden overflow-y-auto bg-zinc-300 dark:bg-zinc-900 justify-center items-center'>
+    <div className='overflow-y-auto bg-zinc-300 dark:bg-zinc-900 justify-center items-center'>
   
       <Heading />
       
