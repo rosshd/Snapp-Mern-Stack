@@ -11,7 +11,7 @@ const ProjectLanding = () => {
       <div className="flex flex-col items-center max-md:w-dvw dark:w-full w-[66dvw] md:pb-[3vh] rounded-2xl dark:bg-inherit dark:border-none md:border-x-8 border-amber-400 md:bg-zinc-900 overflow-hidden">
 
         {/* Conditionally layout the images */}
-        <div className="md:relative flex max-md:grid max-md:grid-cols-2 max-md:scale-50 max-md:gap-4 md:flex-row md:overflow-hidden max-md:h-[420px] w-full max-xl:h-[300px] xl:h-[450px] lg:mb-12">
+        <div className="md:relative flex max-md:grid max-md:grid-cols-2 max-md:scale-50 max-md:gap-2 md:flex-row md:overflow-hidden max-md:h-[420px] w-full max-xl:h-[300px] xl:h-[450px] lg:mb-12">
           {/* Images with responsive static layout for smaller screens */}
           <img
             src={board1}
@@ -39,7 +39,7 @@ const ProjectLanding = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center px-12 dark:w-[66dvw] max-md:mt-6 max-md:w-[95dvw]">
+        <div className="flex flex-col items-center px-12 dark:md:w-[66dvw] max-md:mt-6 max-md:w-[95dvw]">
           <h1 className="text-center text-lg md:text-xl max-md:bg-transparent dark:bg-none font-semibold md:text-gray-200 text-zinc-900 dark:opacity-80 border-2 border-zinc-400 dark:border-gray-400 p-2 rounded-lg shadow-lg md:max-w-[80dvw] max-md:w-[100%] max-md:text-gray-100">
             Explore limitless creativity with services tailored to bring your wildest ideas to life. Specializing in a wide array of 3D solutions including CAD, 3D printing, CNC machining, laser engraving, and animation, Snapp Labs is well-equipped to create anything you can imagine. If you are interested in seeing some of our work, check out the gallery of completed projects, linked below.
           </h1>
