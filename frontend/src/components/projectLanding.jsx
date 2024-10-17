@@ -8,10 +8,10 @@ import keychain from '../../public/assets/products/keychain1.webp';
 const ProjectLanding = () => {
   return (
     <div className="flex flex-col items-center mb-[5vh] justify-center bg-gradient-to-b from-zinc-100 to-zinc-300 dark:to-zinc-900 dark:from-zinc-900">
-      <div className="flex flex-col items-center w-[66dvw] dark:w-full max-md:w-screen md:py-[5vh] rounded-2xl dark:bg-inherit dark:border-none md:border-x-8 border-amber-400 md:bg-zinc-900 overflow-hidden">
+      <div className="flex flex-col items-center w-dvw dark:w-full max-md:w-screen md:py-[5vh] rounded-2xl dark:bg-inherit dark:border-none md:border-x-8 border-amber-400 md:bg-zinc-900 overflow-hidden">
 
         {/* Conditionally layout the images */}
-        <div className="md:relative flex max-md:grid max-md:grid-cols-2 max-md:scale-50 max-md:gap-4 md:flex-row md:overflow-hidden max-md:h-[400px] w-full max-xl:h-[300px] xl:h-[450px] lg:mb-12">
+        <div className="md:relative flex max-md:grid max-md:grid-cols-2 w-[66dvw] max-md:scale-50 max-md:gap-4 md:flex-row md:overflow-hidden max-md:h-[400px] max-xl:h-[300px] xl:h-[450px] lg:mb-12">
           {/* Images with responsive static layout for smaller screens */}
           <img
             src={board1}
