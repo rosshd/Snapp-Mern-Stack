@@ -8,7 +8,6 @@ import { createRoot } from 'react-dom/client'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <img src="/assets/mainLogo.webp" alt="logo" className='hidden' />
     <BrowserRouter>
       <App />
     </BrowserRouter>
