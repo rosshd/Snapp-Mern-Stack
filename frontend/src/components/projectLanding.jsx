@@ -39,8 +39,8 @@ const ProjectLanding = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center px-12 dark:w-[66dvw] max-md:mt-6 max-md:w-full">
-          <h1 className="text-center text-lg md:text-xl max-md:bg-transparent dark:bg-none font-semibold md:text-gray-200 text-zinc-900 dark:opacity-80 border-2 border-zinc-400 dark:border-gray-400 p-4 rounded-lg shadow-lg md:max-w-[80dvw] max-md:w-full max-md:text-gray-100">
+        <div className="flex flex-col items-center px-12 dark:w-[66dvw] max-md:mt-6 max-md:w-[95dvw]">
+          <h1 className="text-center text-lg md:text-xl max-md:bg-transparent dark:bg-none font-semibold md:text-gray-200 text-zinc-900 dark:opacity-80 border-2 border-zinc-400 dark:border-gray-400 p-2 rounded-lg shadow-lg md:max-w-[80dvw] max-md:w-[100%] max-md:text-gray-100">
             Explore limitless creativity with services tailored to bring your wildest ideas to life. Specializing in a wide array of 3D solutions including CAD, 3D printing, CNC machining, laser engraving, and animation, Snapp Labs is well-equipped to create anything you can imagine. If you are interested in seeing some of our work, check out the gallery of completed projects, linked below.
           </h1>
           <Button href="/gallery" className="mt-4 flex items-center">
