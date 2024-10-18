@@ -3,7 +3,7 @@ import Button from './theButton';
 
 const Heading = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full items-center justify-center max-md:gap-20 max-md:pt-12 bg-gradient-to-b from-white to-zinc-100 dark:from-zinc-800 dark:to-zinc-900 h-screen max-md:py-8">
+    <div className="flex flex-col md:flex-row w-full items-center justify-center max-md:gap-20 bg-gradient-to-b from-white to-zinc-100 dark:from-zinc-800 dark:to-zinc-900 h-screen max-md:py-8">
 
       {/* Left Section */}
       <div className="flex flex-col items-center gap-4 justify-end w-full md:w-[40%]">
