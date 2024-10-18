@@ -21,7 +21,7 @@ const ServicePage = () => {
     const isLeftDiv = index % 2 === 0;
     return (
       <div key={index} className='flex flex-col flex-wrap w-screen justify-center mb-[10vh] max-lg:items-center'>
-        <div className={`flex flex-row max-lg:flex-col max-lg:p-2 justify-start items-center px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-900 max-lg:bg-opacity-95 border-orange-300 lg:max-h-[65vh] xl:max-h-[60vh] max-w-[80dvw] max-lg:max-w-[85dvw] border-y-8 ${isLeftDiv ? 'lg:self-start lg:ml-[8dvw]' : 'lg:self-end lg:mr-[8dvw]'}`}>
+        <div className={`flex flex-row max-lg:flex-col max-lg:p-2 justify-start items-center px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-800 max-lg:bg-opacity-95 border-orange-300 lg:max-h-[65vh] xl:max-h-[60vh] max-w-[80dvw] max-lg:max-w-[85dvw] border-y-8 ${isLeftDiv ? 'lg:self-start lg:ml-[8dvw]' : 'lg:self-end lg:mr-[8dvw]'}`}>
           <div className='h-full flex w-fit'>
             <GalPannel files={service.Files} />
           </div>
@@ -42,11 +42,11 @@ const ServicePage = () => {
   };
 
   return (
-    <div className='overflow-y-auto bg-zinc-300 dark:bg-zinc-900 justify-center items-center'>
+    <div className='overflow-y-auto bg-zinc-100 dark:bg-zinc-800 justify-center items-center'>
       <Navbar />
       <h1 className='text-center text-9xl max-md:text-7xl max-md:mt-12 text-black rounded-2xl md:mb-[15vh] max-md:mb-12 mt-4 dark:text-white'>Gallery</h1>
       {loading ? (
-        <div className='h-[80vh] dark:bg-zinc-800 bg-zinc-200 flex items-center justify-center'>
+        <div className='h-[80vh] dark:bg-zinc-800 bg-zinc-100 flex items-center justify-center'>
           <Spinner className='translate-y-[100px]' />
         </div>
       ) : (
