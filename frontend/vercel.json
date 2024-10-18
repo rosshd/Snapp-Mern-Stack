@@ -7,12 +7,12 @@
         "distDir": "frontend/dist"
       },
       "rewrites": [
-        { "source": "/serviceInquiry", "destination": "/serviceInquiry" },
-        { "source": "/about", "destination": "/about" },
-        { "source": "/gallery", "destination": "/gallery" },
-        { "source": "/comingSoon", "destination": "/comingSoon" },
-        { "source": "/winder", "destination": "/winder" },
-        { "source": "/printHub", "destination": "/printHub" }
+        { "source": "/serviceInquiry", "destination": "/" },
+        { "source": "/about", "destination": "/" },
+        { "source": "/gallery", "destination": "/" },
+        { "source": "/comingSoon", "destination": "/" },
+        { "source": "/winder", "destination": "/" },
+        { "source": "/printHub", "destination": "/" }
       ]
     }
   ]
