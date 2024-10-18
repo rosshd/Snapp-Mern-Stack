@@ -5,13 +5,13 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "frontend/dist"
-      },
-      "rewrites": [
-        {
-          "source": "/(.*)", 
-          "destination": "/index.html"
-        }
-      ]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
