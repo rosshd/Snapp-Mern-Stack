@@ -1,8 +1,6 @@
-import React, { Suspense, lazy } from 'react';
+import React from 'react';
 import Heading from '../components/heading';
 import NavBar from '../components/navBar';
-const Projects = lazy(() => import('../components/projectLanding'));
-const Uses = lazy(() => import('../components/uses'));
 import ContSoci from '../components/contSocials';
 
 const Home = () => {

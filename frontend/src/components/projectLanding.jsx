@@ -10,9 +10,8 @@ const ProjectLanding = () => {
     <div className="flex flex-col items-center mb-[5vh] justify-center bg-gradient-to-b from-zinc-100 to-zinc-300 dark:to-zinc-900 dark:from-zinc-900">
       <div className="flex flex-col items-center max-md:w-[95dvw] dark:w-full w-[66dvw] md:pb-[3vh] rounded-2xl dark:bg-inherit dark:border-none md:border-x-8 border-amber-400 md:bg-zinc-900 overflow-hidden">
 
-        {/* Conditionally layout the images */}
         <div className="md:relative flex max-md:grid max-md:grid-cols-2 max-md:scale-50 max-md:gap-3 md:flex-row md:overflow-hidden max-md:h-[420px] w-full max-xl:h-[300px] xl:h-[450px] lg:mb-12">
-          {/* Images with responsive static layout for smaller screens */}
+
           <img
             src={board2}
             loading="lazy"
