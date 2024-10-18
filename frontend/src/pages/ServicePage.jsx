@@ -25,8 +25,8 @@ const ServicePage = () => {
           <div className='h-full flex w-fit'>
             <GalPannel files={service.Files} />
           </div>
-          <div className='h-full max-lg:w-[100%] lg:max-w-[30dvw] rounded-lg py-4 px-4 flex flex-col overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-transparent'>
-            <h1 className='text-white text-start text-2xl mb-4 font-bold max-md:text-center'>{service.Title}</h1>
+          <div className='h-full max-lg:w-[100%] lg:max-w-[25dvw] rounded-lg py-4 px-4 flex flex-col overflow-y-scroll scrollbar-thin scrollbar-track-transparent max-lg:items-center max-lg:justify-center scrollbar-thumb-transparent'>
+            <h1 className='text-white text-start text-2xl mb-4 font-bold max-lg:self-center max-lg:text-center'>{service.Title}</h1>
             <h1 className='text-white text-opacity-50 text-xs text-start indent-4 mb-4'>{service.Description}</h1>
             {service.Link ? (
               <Button href={service.Link} className='h-auto py-4 self-center justify-self-center'>
@@ -44,7 +44,7 @@ const ServicePage = () => {
   return (
     <div className='overflow-y-auto bg-zinc-300 dark:bg-zinc-900 justify-center items-center'>
       <Navbar />
-      <h1 className='text-center text-9xl max-md:text-7xl max-md:mt-12 text-black rounded-2xl md:mb-[15vh] max-md:mb-[8vh] mt-4 dark:text-white'>Gallery</h1>
+      <h1 className='text-center text-9xl max-md:text-7xl max-md:mt-12 text-black rounded-2xl md:mb-[15vh] max-md:mb-12 mt-4 dark:text-white'>Gallery</h1>
       {loading ? (
         <div className='h-[80vh] dark:bg-zinc-800 bg-zinc-200 flex items-center justify-center'>
           <Spinner className='translate-y-[100px]' />
