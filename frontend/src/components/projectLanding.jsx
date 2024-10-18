@@ -14,25 +14,21 @@ const ProjectLanding = () => {
 
           <img
             src={board2}
-            loading="lazy"
             className="md:absolute max-md:static w-52 h-[276px] xl:w-[302px] xl:h-[401px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm md:animate-infinite-scroll md:delay-4000"
             alt="Cutting Board 2"
           />
           <img
             src={iron1}
-            loading="lazy"
             className="md:absolute max-md:static w-52 h-[276px] xl:w-[302px] xl:h-[401px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm md:animate-infinite-scroll md:delay-2000"
             alt="Iron Suit 1"
           />
           <img
             src={board1}
-            loading="lazy"
             className="md:absolute max-md:static w-52 h-[220px] xl:w-[302px] xl:h-[319px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm md:animate-infinite-scroll"
             alt="Cutting Board 1"
           />
           <img
             src={keychain}
-            loading="lazy"
             className="md:absolute max-md:static w-52 h-[230px] xl:w-[302px] xl:h-[334px] border-2 left-[-208px] xl:left-[-312px] bottom-0 border-amber-400 rounded-md shadow-sm md:animate-infinite-scroll md:delay-6000"
             alt="Keychain"
           />
