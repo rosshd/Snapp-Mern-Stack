@@ -9,7 +9,7 @@ const Heading = () => {
       <div className="flex flex-col items-center gap-4 justify-end w-full md:w-[40%]">
         <img
           src="/assets/mainLogo.webp"
-          className="w-[375px] max-h-[74.45px] lg:min-w-[400px] xl:min-w-[600px] xl:max-h-[120px] max-md:my-6"
+          className="w-[375px] h-[74.45px] xl:w-[600px] xl:h-[120px] max-md:my-6"
           alt="Snapp Labs"
         />
         <h1 className="text-lg font-semibold mb-6 text-center dark:text-white dark:opacity-55 max-w-[600px]">

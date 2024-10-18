@@ -32,7 +32,7 @@ const NavBar = ({ className }) => {
       <div className='hidden md:block'>
         <Link className='fixed top-0 left-0 p-4' to='/'>
           <button>
-            <img src={logoIcon} className='h-16 transition-all bg-opacity-80 duration-200 rounded-full hover:bg-opacity-100 hover:translate-y-[-2%] hover:scale-105' alt="home"/>
+            <img src={logoIcon} className='h-16 w-16 transition-all bg-opacity-80 duration-200 rounded-full hover:bg-opacity-100 hover:translate-y-[-2%] hover:scale-105' alt="home"/>
           </button>
         </Link>
         <div className='flex-row items-center m-4 h-auto fixed top-0 left-28 bg-opacity-75 bg-zinc-950 rounded-2xl z-40 border-orange-300 border-2 scale-110'>
