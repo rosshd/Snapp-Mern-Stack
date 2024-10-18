@@ -2,7 +2,7 @@
     {
       "id": 1,
       "Title": "Iron Man Zombie Helmet",
-      "Description": "Using a laser engraver, we are able to create a premium feel to your products using wood, leather, and glass. The traditional Swedish breakfast boards were custom made using pre-cut boards from IKEA. The Sweden cutout with a heart in our client’s city of birth made for a beautiful wall art that gives her a reminder of her hometown. The “FIKA” breakfast tray was engraved to be used for the traditional 3 o’clock snack time \"Fika\" in Sweden. This gift bundle showcases our laser cutting and engraving abilities.",
+      "Description": "Using models from @piercepopculturedesigns on instagram, this piece was expertly 3d printed, sanded, and painted as a showcase of our exceptional painting abilities. A combination of metalcast spray paints on top of a Duralumen chrome undercoat created the perfect dark metallic shine on the helmet. For the faceplate, a gloss black undercoat combined with a rustoleum gold spray paint achieved the beautiful gold color similar to that used in the Iron Man films. The skull was airbrushed with bone white and matte white paints, and hand painted with blood red and matte black paints. A black wash and some weathering techniques gave the skull its final deathly and worn finish. Parts of the helmet were touched up with chrome, gunmetal, and bronze paint to achieve a more realistic look.",
       "Link": "",
       "Files": [
         "IronZombie.jpg",
@@ -32,7 +32,7 @@
     {
       "id": 4,
       "Title": "Anakin’s Reforged Lightsaber",
-      "Description": "This pendant was created as a tribute to a lost dog, Sixten. Using a 3d scanner, a paw print which was pressed into clay over 5 years before his passing was scanned. Then the model was imported into Blender, a 3d modeling software, where all of the cracks and broken pieces from the clay were 3d repaired and textured to resemble the clay around it. After creating a clean 3d paw model using the scan, it was exported into another CAD software, where the model was scaled and had its pendant shape created. Then the file was sent to a local silversmith who used an ultra-high resolution 3d print out of wax to create a perfect silver replica of the 3d model. This was done by burning out the wax with the silver, leaving the silver paw behind.",
+      "Description": "This project was created entirely from scratch and modeled around electronics I had laying around from a toy lightsaber. The design was fully created in Fusion 360, and 3d printed on the Snapmaker 2.0 350T for Snapmaker’s “Print and Play” competition. The Snapmaker was also used to laser cut custom designed leather pieces and the wooden stand, which was also designed in Fusion 360. A full video on the lightsaber's creation can be found in the link below.",
       "Link": "https://www.youtube.com/watch?v=ANBILfw8FJE",
       "Files": [
         "Lightsaber-3.jpg",
