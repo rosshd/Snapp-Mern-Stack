@@ -21,7 +21,7 @@ const aboutUs = () => {
           </div>
         </div>
         <NavBar/>
-        <div className='mx-[15%] mb-[10vh] border-orange-400 flex flex-col items-center justify-center max-md:px-4 max-,d:py-4 border-x-4 rounded-md p-16 bg-zinc-800 dark:bg-zinc-900'>
+        <div className='mx-[15%] mb-[10vh] border-orange-400 flex flex-col items-center justify-center max-md:px-4 max-,d:py-4 border-x-4 rounded-md p-16 bg-zinc-900 opacity-80'>
           <div>
             <img src={mainLogo} alt='SnappLabs' className='md:w-[400px] w-[300px] opacity-100 mb-4'/>
           </div>
