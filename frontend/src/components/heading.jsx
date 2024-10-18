@@ -1,7 +1,5 @@
 import React from 'react';
 import Button from './theButton';
-import mainLogo from "../../public/assets/mainLogo.webp";
-import snappSaber from "../../public/assets/snappSaber.webp";
 
 const Heading = () => {
   return (
@@ -10,7 +8,7 @@ const Heading = () => {
       {/* Left Section */}
       <div className="flex flex-col items-center gap-4 justify-end w-full md:w-[40%]">
         <img
-          src={mainLogo}
+          src="/assets/mainLogo.webp"
           className="w-[375px] max-h-[74.45px] lg:min-w-[400px] xl:min-w-[600px] xl:max-h-[120px] max-md:my-6"
           alt="Snapp Labs"
         />
@@ -35,7 +33,7 @@ const Heading = () => {
       {/* Right Section */}
       <div className="flex justify-center w-full md:w-[40%]">
         <img
-          src={snappSaber}
+          src="/assets/snappSaber.webp"
           className="max-lg:w-[300px] max-lg:h-[170px] lg:w-[500px] lg:h-[300px] rounded-lg border-2"
           alt="3D Printing"
         />
