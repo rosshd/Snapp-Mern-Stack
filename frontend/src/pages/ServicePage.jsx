@@ -44,7 +44,7 @@ const ServicePage = () => {
   return (
     <div className='overflow-y-auto bg-zinc-300 dark:bg-zinc-900 justify-center items-center'>
       <Navbar />
-      <h1 className='text-center text-9xl text-black rounded-2xl mb-[15vh] mt-4 dark:text-white'>Gallery</h1>
+      <h1 className='text-center text-9xl max-md:text-7xl max-md:mt-12 text-black rounded-2xl mb-[15vh] mt-4 dark:text-white'>Gallery</h1>
       {loading ? (
         <div className='h-[80vh] dark:bg-zinc-800 bg-zinc-200 flex items-center justify-center'>
           <Spinner className='translate-y-[100px]' />
