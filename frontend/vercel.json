@@ -7,12 +7,10 @@
         "distDir": "frontend/dist"
       },
       "rewrites": [
-        { "source": "/serviceInquiry", "destination": "/" },
-        { "source": "/about", "destination": "/" },
-        { "source": "/gallery", "destination": "/" },
-        { "source": "/comingSoon", "destination": "/" },
-        { "source": "/winder", "destination": "/" },
-        { "source": "/printHub", "destination": "/" }
+        {
+          "source": "/(.*)", 
+          "destination": "/index.html"
+        }
       ]
     }
   ]
