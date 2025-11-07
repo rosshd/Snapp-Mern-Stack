@@ -14,9 +14,9 @@ const GalPannel = ({ files = [], className }) => {
         if (files.length === 1) {
             console.log('Rendering one file:', `${filePath}${files[0]}`);
             return (
-                <div className='flex flex-row items-center justify-center py-4 max-h-[40vh]'>
+                <div className='flex flex-col items-center justify-end w-full h-full py-4'>
                     <img key='0' src={`${filePath}${files[0]}`} alt={`File 1`}
-                        className='h-[30vh] max-w-[100%] rounded-md object-cover'
+                        className='max-h-[40vh] w-auto max-w-full rounded-md object-contain'
                     />     
                 </div>   
             );
@@ -25,12 +25,12 @@ const GalPannel = ({ files = [], className }) => {
         if (files.length === 2) {
             console.log('Rendering two files:', files.map((file, index) => `${filePath}${file}`));
             return (
-                <div className='flex max-w-[100%] flex-row flex-wrap overflow-hidden w-full items-center justify-center gap-2'>
+                <div className='flex flex-col w-full h-full items-center justify-end gap-2 py-2'>
                     <img key='0' src={`${filePath}${files[0]}`} alt={`File 1`}
-                        className='h-[19vh] w-auto max-w-[100%] rounded-md object-cover'
+                        className='max-h-[20vh] w-auto max-w-full rounded-md object-contain'
                     />
                     <img key='1' src={`${filePath}${files[1]}`} alt={`File 2`}
-                        className='h-[19vh] w-auto max-w-[100%] rounded-md object-cover'
+                        className='max-h-[20vh] w-auto max-w-full rounded-md object-contain'
                     />        
                 </div>  
             );
@@ -39,16 +39,16 @@ const GalPannel = ({ files = [], className }) => {
         if (files.length > 2) {
             console.log('Rendering more than two files:', files.map((file, index) => `${filePath}${file}`));
             return (
-                <div className='flex flex-col max-md:flex-wrap justify-center items-center overflow-hidden space-y-2 mr-2 gap-[2%]'>
+                <div className='flex flex-col w-full h-full items-center justify-end gap-2 py-2'>
                     <img key='0' src={`${filePath}${files[0]}`} alt={`File 1`}
-                        className='h-[26vh] max-w-[100%] object-cover rounded-md'
+                        className='max-h-[26vh] w-auto max-w-full object-contain rounded-md'
                     />
-                    <div className='flex max-w-[100%] flex-row gap-2'>
+                    <div className='flex flex-row w-full gap-2 items-center justify-center'>
                         <img key='1' src={`${filePath}${files[1]}`} alt={`File 2`}
-                            className='h-[12vh] max-w-[100%] object-cover rounded-md'
+                            className='max-h-[12vh] w-auto max-w-[48%] object-contain rounded-md'
                         />   
                         <img key='2' src={`${filePath}${files[2]}`} alt={`File 3`}
-                            className='h-[12vh] max-w-[100%] object-cover rounded-md'
+                            className='max-h-[12vh] w-auto max-w-[48%] object-contain rounded-md'
                         /> 
                     </div>  
                 </div>  
