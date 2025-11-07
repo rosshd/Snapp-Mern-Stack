@@ -20,12 +20,12 @@ const ServicePage = () => {
   const renderService = (service, index) => {
     const isLeftDiv = index % 2 === 0;
     return (
-      <div key={index} className='flex flex-col flex-wrap w-screen justify-center mb-[10vh] max-lg:items-center'>
-        <div className={`flex flex-row max-lg:flex-col max-lg:p-2 justify-start items-center px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-800 max-lg:bg-opacity-95 border-orange-300 lg:max-h-[65vh] xl:max-h-[60vh] max-w-[80dvw] max-lg:max-w-[85dvw] border-y-8 ${isLeftDiv ? 'lg:self-start lg:ml-[8dvw]' : 'lg:self-end lg:mr-[8dvw]'}`}>
-          <div className='h-full flex w-fit'>
+      <div key={index} className='flex flex-col flex-wrap w-full justify-center mb-[10vh] max-lg:items-center'>
+        <div className={`flex flex-row max-lg:flex-col max-lg:p-2 justify-start items-start px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-800 max-lg:bg-opacity-95 border-orange-300 max-w-[80dvw] max-lg:max-w-[85dvw] border-y-8 ${isLeftDiv ? 'lg:self-start lg:ml-[8dvw]' : 'lg:self-end lg:mr-[8dvw]'}`}>
+          <div className='flex w-fit'>
             <GalPannel files={service.Files} />
           </div>
-          <div className='h-full max-lg:w-[100%] lg:max-w-[25dvw] rounded-lg py-4 px-4 flex flex-col overflow-y-scroll scrollbar-thin scrollbar-track-transparent max-lg:items-center max-lg:justify-center scrollbar-thumb-transparent'>
+          <div className='max-lg:w-[100%] lg:max-w-[25dvw] rounded-lg py-4 px-4 flex flex-col max-lg:items-center max-lg:justify-center'>
             <h1 className='text-white text-start text-2xl mb-4 font-bold max-lg:self-center max-lg:text-center'>{service.Title}</h1>
             <h1 className='text-white text-opacity-50 text-xs text-start indent-4 mb-4'>{service.Description}</h1>
             {service.Link ? (
