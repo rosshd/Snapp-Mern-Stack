@@ -21,11 +21,11 @@ const ServicePage = () => {
     const isLeftDiv = index % 2 === 0;
     return (
       <div key={index} className='flex flex-col flex-wrap w-full justify-center mb-[10vh] max-lg:items-center'>
-        <div className={`flex flex-row max-lg:flex-col max-lg:p-2 justify-start items-end px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-800 max-lg:bg-opacity-95 border-orange-300 w-[530px] max-lg:max-w-[85dvw] border-y-8 ${isLeftDiv ? 'lg:self-start lg:ml-[8dvw]' : 'lg:self-end lg:mr-[8dvw]'}`}>
-          <div className='flex w-[280px] max-lg:w-full items-end justify-center'>
+        <div className={`flex flex-row max-lg:flex-col max-lg:p-2 justify-start items-end px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-800 max-lg:bg-opacity-95 border-orange-300 lg:w-3/4 max-lg:max-w-[85dvw] border-y-8 ${isLeftDiv ? 'lg:self-start lg:ml-[8dvw]' : 'lg:self-end lg:mr-[8dvw]'}`}>
+          <div className='flex lg:w-[53%] max-lg:w-full items-end justify-center'>
             <GalPannel files={service.Files} />
           </div>
-          <div className='max-lg:w-[100%] w-[250px] rounded-lg py-4 px-4 flex flex-col max-lg:items-center max-lg:justify-center'>
+          <div className='max-lg:w-[100%] lg:w-[47%] rounded-lg py-4 px-4 flex flex-col max-lg:items-center max-lg:justify-center'>
             <h1 className='text-white text-start text-2xl mb-4 font-bold max-lg:self-center max-lg:text-center'>{service.Title}</h1>
             <h1 className='text-white text-opacity-50 text-xs text-start indent-4 mb-4'>{service.Description}</h1>
             {service.Link ? (
