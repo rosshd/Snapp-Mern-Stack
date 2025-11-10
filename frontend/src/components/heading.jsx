@@ -17,7 +17,7 @@ const Heading = () => {
         </h1>
         <div className="flex flex-col sm:flex-row gap-2 items-center">
           <Button href="/about" className="sm:mr-2">
-            <h1 className="font-display font-semibold">About Us</h1>
+            <h1>About Us</h1>
           </Button>
           <Button href="/serviceInquiry" className="flex items-center">
             <span>Get a Quote</span>
