@@ -23,7 +23,7 @@ const ServicePage = () => {
     
     return (
       <div key={index} className='flex flex-col flex-wrap w-full justify-center mb-[10vh] max-lg:items-center'>
-        <div className={`flex flex-row max-lg:flex-col max-lg:p-2 justify-start items-end px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-900 max-lg:bg-opacity-95 border-orange-300 lg:w-2/3 max-lg:max-w-[85dvw] border-y-8 ${isLeftDiv ? 'lg:self-start lg:ml-[8dvw]' : 'lg:self-end lg:mr-[8dvw]'}`}>
+        <div className={`flex flex-row max-lg:flex-col max-lg:p-2 justify-start items-end px-2 py-4 rounded-lg overflow-hidden bg-zinc-800 dark:bg-zinc-1000 max-lg:bg-opacity-95 border-orange-300 lg:w-2/3 max-lg:max-w-[85dvw] border-y-8 ${isLeftDiv ? 'lg:self-start lg:ml-[8dvw]' : 'lg:self-end lg:mr-[8dvw]'}`}>
           <div className='flex lg:w-[53%] max-lg:w-full items-end justify-center'>
             <GalPannel files={service.Files} />
           </div>
