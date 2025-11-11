@@ -10,7 +10,7 @@ const aboutUs = () => {
     w-screen bg-zinc-200 dark:bg-zinc-900 justify-center items-center md:pt-20 py-8'>
         <div className='w-screen flex flex-col lg:flex-row items-center justify-center mb-[10vh] lg:py-16'>
           <div className='lg:flex lg:justify-center lg:items-center lg:border-orange-400 lg:border-b-4 lg:drop-shadow-md lg:rounded-md p-8'>
-            <h1 className='text-8xl max-md:text-4xl dark:text-white opacity-90 max-lg:mb-8 max-sm:mb-0 dark:bg-none max-lg:text-center rounded-md xl:scale-125 xl:mr-32 font-display font-bold'>About Us</h1>
+            <h1 className='text-7xl max-md:text-5xl dark:text-white opacity-90 max-lg:mb-8 max-sm:mb-0 dark:bg-none max-lg:text-center rounded-md xl:scale-110 xl:mr-32 font-display font-bold whitespace-nowrap tracking-tight'>About Us</h1>
             
             <div className='flex justify-center items-center w-full h-full'>
               <div className='relative w-[310px] h-[210px] justify-center lg:self-start items-center flex'>
