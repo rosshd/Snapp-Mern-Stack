@@ -23,6 +23,9 @@ export default {
       // => @media (min-width: 1280px) { ... }
     },
     extend: {
+      fontFamily: {
+        'display': ['Poppins', 'sans-serif'],
+      },
       transitionDelay: {
         '2000': '2000ms',
         '4000': '4000ms',
