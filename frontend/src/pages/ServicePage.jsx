@@ -19,7 +19,6 @@ const ServicePage = () => {
 
   const renderService = (service, index) => {
     const isLeftDiv = index % 2 === 0;
-    const hasSingleImage = service.Files && service.Files.length === 1;
     
     return (
       <div key={index} className='flex flex-col flex-wrap w-full justify-center mb-[10vh] max-lg:items-center'>
@@ -27,9 +26,9 @@ const ServicePage = () => {
           <div className='flex lg:w-[53%] max-lg:w-full items-end justify-center'>
             <GalPannel files={service.Files} />
           </div>
-          <div className={`max-lg:w-[100%] lg:w-[47%] rounded-lg py-4 px-4 flex flex-col ${hasSingleImage ? 'items-center justify-center' : 'max-lg:items-center max-lg:justify-center'}`}>
-            <h1 className={`text-white text-2xl mb-4 font-bold ${hasSingleImage ? 'text-center' : 'text-start max-lg:self-center max-lg:text-center'}`}>{service.Title}</h1>
-            <h1 className={`text-white text-opacity-50 text-xs mb-4 ${hasSingleImage ? 'text-center' : 'text-start indent-4'}`}>{service.Description}</h1>
+          <div className='max-lg:w-[100%] lg:w-[47%] rounded-lg py-4 px-4 flex flex-col items-center justify-center'>
+            <h1 className='text-white text-2xl mb-4 font-bold text-center'>{service.Title}</h1>
+            <h1 className='text-white text-opacity-50 text-xs mb-4 text-center'>{service.Description}</h1>
             {service.Link ? (
               <Button href={service.Link} className='h-auto py-4 self-center justify-self-center'>
                 <h1 className='text-xs opacity-85'>See here</h1>
