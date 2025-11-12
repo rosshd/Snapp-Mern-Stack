@@ -43,7 +43,7 @@ const ServicePage = () => {
   };
 
   return (
-    <div className='overflow-y-auto bg-zinc-100 dark:bg-zinc-800 justify-center items-center'>
+    <div className='overflow-x-hidden overflow-y-auto bg-zinc-100 dark:bg-zinc-800 justify-center items-center'>
       <Navbar />
       <h1 className='text-center text-8xl max-md:text-6xl max-md:mt-12 text-black rounded-2xl md:mb-[15vh] max-md:mb-12 md:mt-[15vh] mt-[7vh] dark:text-white font-display font-bold tracking-tight'>Gallery</h1>
       {loading ? (
